@@ -1,0 +1,277 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+  height: 100%;
+  }
+body{
+    background-image: url(../images/bg.jpg);
+    background-position: center 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+header{
+    background: url(../images/bg-head.png) repeat-x;
+	height: 90px;
+	border-bottom: 7px solid #fff;
+	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.header_container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.logo {
+	width: 95px;
+	height: 71px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.socialbut{
+	margin-top: 23px;
+	float: right;
+}
+.socialbut ul li{
+	display: inline-block;
+	margin-left: 6px;
+}
+
+.icon {
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+.icon-fb {
+    cursor: pointer;
+    width: 42px;
+    height: 44px;
+    background-position: -64px -5px;
+}
+.icon-fb:hover {
+    background-position: -116px -5px;
+}
+.icon-git {
+    cursor: pointer;
+    width: 42px;
+    height: 44px;
+    background-position: -31px -59px;
+}
+
+.icon-git:hover {
+    background-position: -83px -59px;
+}
+.icon-tw {
+    cursor: pointer;    
+    width: 38px;
+    height: 40px;
+    background-position: -94px -120px;
+}
+.icon-tw:hover {
+    background-position: -168px -5px;
+}
+.icon-vk {
+    cursor: pointer;
+    width: 42px;
+    height: 44px;
+    background-position: -173px -87px;
+}
+
+.icon-vk:hover {
+    background-position: -142px -141px;
+}
+.content{
+	width: 960px;
+	margin: 0 auto;
+}
+.leftMenu {
+	display: inline-block;
+	width: 250px;
+    margin-top: 36px;
+}
+.leftMenu ul li a{
+	display: block;
+	font-family: "OpenSansSemiBold";
+	text-decoration: none;
+	padding: 19px 27px 19px 27px;
+	font-size: 20px;
+	color: rgb(114, 112, 112);
+	line-height: 1.1;
+	text-align: left;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);  
+	background: -webkit-linear-gradient(#ffffff 0%, #e9e6e5 100%);
+	background: -o-linear-gradient(#ffffff 0%, #e9e6e5 100%);
+	background: linear-gradient(#ffffff 0%, #e9e6e5 100%);  
+	border: 1px solid #c5c5c5;
+	border-top: none;
+	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+}
+
+.leftMenu ul li:last-child a{
+	-webkit-border-radius: 0 0 4px 4px;
+	        border-radius: 0 0 4px 4px;
+}
+.leftMenu ul li:first-child a{
+	border-top: 1px solid #c5c5c5;
+	-webkit-border-radius: 4px 4px 0 0;
+	        border-radius: 4px 4px 0 0;
+}
+
+.leftMenu ul li a:hover{ 
+	background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+	box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+}
+
+.leftMenu ul li.active a{
+	color: #1e7465;
+	border: 1px solid #40ab91;
+	border-top: 1px solid #66dbbe;
+	line-height: 1.1;
+	text-align: left;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.35);
+	background-image: -moz-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+
+}
+
+/*
+.maininform{
+	display: inline-block;
+	width: 650px;
+	float: right;
+	vertical-align: top;
+}
+.content{
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 25px;
+	-webkit-border-radius: 4px;
+        	border-radius: 4px;
+}
+.mainLine{
+	font-family: Arial;
+	font-stretch: condensed;
+	font-size: 27px;
+	color: #3BA8C0;
+	display: inline-block;
+	padding:20px 50px 20px 20px;
+	border-bottom: 2px solid #3ba8c0;
+}
+.nameorg{
+	display: block;
+	font-size: 17px;
+}
+.datawork{
+	display: block;
+	font-style: italic;
+	margin-top: 3px;
+	font-size: 15px;
+}
+.workExp{
+	margin-bottom: 40px;
+}
+.workExp ul li{
+	position: relative;
+	padding: 28px 0 0 25px;
+	margin-left: 100px;
+	display: block;
+	font-family: Arial;
+	font-stretch: condensed;
+	font-size: 17px;
+	color: #6B747C;
+}
+
+.workExp ul li::after{
+	position: absolute;
+	top: 28px;
+	left: -40px;
+	height: 34px;
+	width: 36px;
+	content: "";
+	background-image: url("bag.png");	
+}
+.Education{
+padding-bottom: 40px;
+}
+.Education ul li{
+	position: relative;
+	padding: 28px 0 0 25px;
+	margin-left: 100px;
+	display: block;
+	font-family: Arial;
+	font-stretch: condensed;
+	font-size: 17px;
+	color: #6B747C;
+}
+
+.Education ul li.univer::after{
+	position: absolute;
+	top: 32px;
+	left: -40px;
+	height: 23px;
+	width: 41px;
+	content: "";
+	background-image: url("univer.png");	
+}
+.Education ul li.course::after{
+	position: absolute;
+	top: 30px;
+	left: -32px;
+	height: 32px;
+	width: 26px;
+	content: "";
+	background-image: url("course.png");	
+}
+.footer{
+	text-align: center;
+	padding: 30px ;
+	font-size: 13px;
+	color: #4A545D;
+	font-family: Arial;
+	font-stretch: condensed;
+	background-color: #EFF3F7;
+
+}
