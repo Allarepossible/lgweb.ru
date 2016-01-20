@@ -1,70 +1,45 @@
 /* font-family: "OpenSansRegular"; */
 @font-face {
     font-family: "OpenSansRegular";
-    src: url("../font/OpenSans-Regular.ttf") format("truetype");
+    src: url("../font/OpenSansRegular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 /* font-family: "OpenSansLight"; */
 @font-face {
     font-family: "OpenSansLight";
-    src: url("../font/OpenSans-Light.ttf") format("truetype");
+    src: url("../font/OpenSansLight.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 /* font-family: "OpenSansItalic"; */
 @font-face {
     font-family: "OpenSansItalic";
-    src: url("../font/OpenSans-Italic.ttf") format("truetype");
+    src: url("../font/OpenSansItalic.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 /* font-family: "OpenSansBold"; */
 @font-face {
     font-family: "OpenSansBold";
-    src: url("../font/OpenSans-Bold.ttf") format("truetype");
+    src: url("../font/OpenSansBold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
-/* font-family: "OpenSansExtraBold"; */
-@font-face {
-    font-family: "OpenSansExtraBold";
-    src: url("../font/OpenSans-ExtraBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "OpenSansExtraBoldItalic"; */
-@font-face {
-    font-family: "OpenSansExtraBoldItalic";
-    src: url("../font/OpenSans-ExtraBoldItalic.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
+
 /* font-family: "OpenSansBoldItalic"; */
 @font-face {
     font-family: "OpenSansBoldItalic";
-    src: url("../font/OpenSans-BoldItalic.ttf") format("truetype");
+    src: url("../font/OpenSansBoldItalic.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
-/* font-family: "OpenSansRegularItalic"; */
-@font-face {
-    font-family: "OpenSansRegularItalic";
-    src: url("../font/OpenSans-RegularItalic.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
+
 /* font-family: "OpenSansSemiBold"; */
 @font-face {
     font-family: "OpenSansSemiBold";
-    src: url("../font/OpenSans-SemiBold.ttf") format("truetype");
+    src: url("../font/OpenSansSemiBold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
-/* font-family: "OpenSansSemiBoldItalic"; */
-@font-face {
-    font-family: "OpenSansSemiBoldItalic";
-    src: url("../font/OpenSans-SemiBoldItalic.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
+
