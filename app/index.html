@@ -11,61 +11,146 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>Project</title>
 </head>
-<body> 
+<body>
+<div class="wrapper">
 	<header class="header">
 		<div class="header_container">
-			<img class="logo" src="images/logo.png" alt="loftschool">
-			<div class="socialbut">
-				<ul>
-					<li><a href="#" class="icon icon-fb" alt=""></a></li>			
-					<li><a href="#" class="icon icon-vk" alt=""></a></li>
-					<li><a href="#" class="icon icon-tw" alt=""></a></li>
-					<li><a href="#" class="icon icon-git" alt=""></a></li>
-				</ul>
-			</div>
+			<a href="/path/" class="logo">
+				<img class="logo-img" src="images/logo.png" alt="loftschool">
+				<span class="logo-text">
+					Loftschool. От мыслителя к создателю.
+				</span>
+			</a>
+			<ul class="socials">
+				<li class="socials-item">
+					<a href="#" class="icon icon-fb" alt="">
+						facebook
+					</a>
+				</li>			
+				<li class="socials-item">
+					<a href="#" class="icon icon-vk" alt="">
+						vkontakte
+					</a>
+				</li>
+				<li class="socials-item">
+					<a href="#" class="icon icon-tw" alt="">
+						twitter
+					</a>
+				</li>
+				<li class="socials-item">
+					<a href="#" class="icon icon-git" alt="">
+						github
+					</a>
+				</li>
+			</ul>
 		</div>
 	</header>
-	<div class="content">
-		<div class="leftMenu">
-			<div class="left-nav">
+	<main class="content">
+		<aside class="sidebar">
+			<nav class="nav">
 				<ul>
 					<li class="active"><a href="#">Обо мне</a></li>
-					<li><a href="#">Мои работы</a></li>
-					<li><a href="#">Связаться со мной</a></li>
+					<li><a href="#">Мои Работы</a></li>
+					<li><a href="#">Обратная связь</a></li>
+				</ul>
+			</nav>
+			<div class="contacts">
+				<div class="contacts-title">Контакты</div>
+				<ul class="contacts-list">
+					<li class="gmail-cont">lisynok@list.ru</li>
+					<li class="tel-cont">+7 (916) 814-10-51</li>
+					<li class="skype-cont">Lisynok_93</li>
 				</ul>
 			</div>
-			<div class="left-contact">
-				<div class="name-cont">
-					<ul>
-						<li><a href="#" class="gmail-cont">allarepossible@gmail.com</a></li>
-						<li><a href="#"class="tel-cont">+7 (916) 814-10-51</a></li>
-						<li><a href="#"class="skype-cont">Lisynok_93</a></li>
-					</ul>
+		</aside>
+		<div class="content-area">
+			<section class="information">
+				<div class="mainLine">Основная информация</div>
+				<div class="main-information">
+					<div class="photo">
+						<div class="inner-photo">
+							<img src="images/photo.png" height="132px">
+						</div>
+					</div>
+					<div class="info">
+						<p><span class="bold">Меня зовут:</span> Гильфанова Лейсан</p>
+						<p><span class="bold">Мой возраст:</span> 22 года</p>
+						<p><span class="bold">Мой город:</span> Москва, Россия</span></p>
+						<p><span class="bold">Моя специализация:</span> FRONTEND разработчик</span></p>
+						<div class="navyki">Ключевые навыки:</div>
+						<div class="skills">
+							<div class="skill">Html</div>						
+							<div class="skill">Css</div>
+							<div class="skill">Javascript</div>
+							<div class="skill">Git</div>
+							<div class="skill">Gupl</div>							
+							<div class="skill">Php</div>
+							<div class="skill">Angular</div>
+							<div class="skill">Xml</div>
+						</div>							
+					</div>
 				</div>
-			</div>
-		</div>
-		<div class="maininform">
-			<div class="content2">
+			</section>
+			<section class="information">	
+				<div class="mainLine">Опыт работы</div>	
 				<div class="workExp">
-					<span class="mainLine">Опыт работы</span>
 					<ul>
-						<li><span class="nameorg"><strong>"ИП Боровицкий"</strong> - Продавец дисков</span><span class="datawork">Сентябрь 2005 - Август 2008</span></li>
-						<li><span class="nameorg"><strong>"ООО Системы безопастности"</strong> - Системный администратор</span> <span class="datawork">Июнь 2008 - Июль 2010</span></li>
+						<li class="org">
+							<div class="work">
+								<span class="bold">"ИП Боровицкий" - Продавец дисков</span><span class="Data">Сентябрь 2005 - Август 2008</span>
+							</div>
+						</li>
+						<li class="org">
+							<div class="work">	
+								<span class="bold">"ООО Системы безопастности" - Системный администратор</span><span class="Data"> Июнь 2008 - Июль 2010</span>
+							</div>
+						</li>
+						<li class="org">
+							<div class="work">	
+								<span class="bold">"Магнит, Розничная сеть" - Ведущий аналитик по внедрению Oracle</span><span class="Data"> Август 2011 - Октябрь 2012</span>
+							</div>
+						</li>
 					</ul>
 				</div>
-			</div>
-			<div class="content">	
-				<div class="Education">
-					<span class="mainLine">Образование</span>
+			</section>
+			<section class="information">	
+				<div class="mainLine">Образование</div>
+				<div class="Education">	
 					<ul>
-						<li class="univer"><span class="nameorg">Незаконченное высшее. <strong>СПБГУ ИТМО</strong></span><span class="datawork">Октябрь 2012 - по настоящее время</span></li>
-						<li class="course"><span class="nameorg">Курсы <strong>Loftschool.ru</strong></span> <span class="datawork">Ноябрь 2014 - по настоящее время</span></li>
+						<li class="org">
+							<div class="school">
+								<span class="bold">Полное среднее. Физико-математический лицей № 30</span><span class="Data">1994 - 2004</span>
+							</div>
+						</li>
+						<li class="org">
+							<div class="vus">	
+								<span class="bold">Незаконченное высшее.СПБГУ ИТМО</span><span class="Data"> Октябрь 2012 - по настоящее время</span>
+							</div>
+						</li>
+						<li class="org">
+							<div class="kursy">	
+								<span class="bold">Курсы Loftschool.ru</span><span class="Data"> Ноябрь 2014 - по настоящее время</span>
+							</div>
+						</li>
 					</ul>
 				</div>
-			</div>
+				</div>
+			</section>			
+		</div>
+	</main>
+	<div class="empty"></div>
+</div>
+<footer class="footer">
+	<div class="footer_container">
+		<div class="icon enter">
+			<a href="#" class="enter_text" alt="">
+				Вход
+			</a>
+		</div>
+		<div class="footer_text">© 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его
 		</div>
 	</div>
-	<footer class="footer">© 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его</footer>
+</footer>
 <script src="bower/jquery/jquery.js"></script>
 </body>
 </html>
