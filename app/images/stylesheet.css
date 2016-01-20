@@ -1,152 +1,45 @@
-body{
-    background-image: url(bg.jpg);
-    background-position: center 0;
-    -webkit-background-size: cover;
-    background-size: cover;
+/* font-family: "OpenSansRegular"; */
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("../fonts/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
-.circle {
-    position: relative;
-  border-radius: 50%;
-  background-color: #f7f7f7;
-  box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.8),inset 1px 1px 1px 0px rgba(199, 199, 199, 0.85);
-  width: 53px;
-  height: 54px;
+/* font-family: "OpenSansLight"; */
+@font-face {
+    font-family: "OpenSansLight";
+    src: url("../fonts/OpenSansLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
-
-.circle::before {
-    position: absolute;
-    top: 17px;
-    left: 17px;
-    content: "";
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-    width: 22px;
-    height: 20px;
-    background-position: -5px -5px;
+/* font-family: "OpenSansItalic"; */
+@font-face {
+    font-family: "OpenSansItalic";
+    src: url("../fonts/OpenSansItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
-
-.header{
-    background: #a9a7a7; /* Old browsers */
-    background: -moz-linear-gradient(top,  #a9a7a7 0%, #7b7979 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #a9a7a7 0%,#7b7979 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #a9a7a7 0%,#7b7979 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9a7a7', endColorstr='#7b7979',GradientType=0 ); /* IE6-9 */
-    border-radius: 5px 5px 0 0;
-    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
-    border:1px solid #636363;
+/* font-family: "OpenSansBold"; */
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("../fonts/OpenSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
-
-h1{
-  font-size: 24px;
-  font-family: "Open Sans";
-  color: rgb(238, 237, 236);
-  line-height: 0.917;
-  text-align: left;
-  text-shadow: 0px 1px 0px rgba(102, 101, 101, 1);
+/* font-family: "OpenSansBoldItalic"; */
+@font-face {
+    font-family: "OpenSansBoldItalic";
+    src: url("../fonts/OpenSansBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
-.icon {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
+/* font-family: "OpenSansSemiBold"; */
+@font-face {
+    font-family: "OpenSansSemiBold";
+    src: url("../fonts/OpenSansSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
-.icon-case {
-    width: 22px;
-    height: 20px;
-    background-position: -5px -5px;
-}
-
-.icon-email {
-    width: 17px;
-    height: 13px;
-    background-position: -37px -5px;
-}
-
-.icon-fb {
-    cursor: pointer;
-    width: 42px;
-    height: 44px;
-    background-position: -64px -5px;
-}
-
-.icon-fb:hover {
-    background-position: -116px -5px;
-}
-
-.icon-file {
-    width: 16px;
-    height: 21px;
-    background-position: -5px -59px;
-}
-
-.icon-git {
-    cursor: pointer;
-    width: 42px;
-    height: 44px;
-    background-position: -31px -59px;
-}
-
-.icon-git:hover {
-    background-position: -83px -59px;
-}
-
-.icon-graduate {
-    width: 28px;
-    height: 19px;
-    background-position: -135px -59px;
-}
-
-.icon-locked {
-    width: 19px;
-    height: 22px;
-    background-position: -135px -88px;
-}
-
-.icon-school {
-    width: 22px;
-    height: 22px;
-    background-position: -5px -120px;
-}
-
-.icon-skype {
-    width: 20px;
-    height: 20px;
-    background-position: -37px -120px;
-}
-
-.icon-telephone {
-    width: 17px;
-    height: 22px;
-    background-position: -67px -120px;
-}
-
-.icon-tw {
-    cursor: pointer;    
-    width: 38px;
-    height: 40px;
-    background-position: -94px -120px;
-}
-
-.icon-tw:hover {
-    background-position: -168px -5px;
-}
-
-.icon-unlocked {
-    width: 24px;
-    height: 22px;
-    background-position: -173px -55px;
-}
-
-.icon-vk {
-    cursor: pointer;
-    width: 42px;
-    height: 44px;
-    background-position: -173px -87px;
-}
-
-.icon-vk:hover {
-    background-position: -142px -141px;
-}
