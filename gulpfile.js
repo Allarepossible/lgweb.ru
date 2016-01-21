@@ -1,6 +1,5 @@
 var gulp = require("gulp"),
-    rename = require('gulp-rename'),
-    autoprefixer = require('gulp-autoprefixer'),
+  modernizr = require('gulp-modernizr');
     browserSync = require('browser-sync');
 
 // Сервер
@@ -12,7 +11,20 @@ gulp.task('server', function () {
     }
   });
 });
-
+gulp.task('modernizr', function() {
+  gulp.src('app/js/*.js')
+    .pipe(modernizr(
+      {
+        "options": [
+        "setClasses",
+        "html5shiv"
+        ],
+        "tests" : ['placeholder', 'cssanimations'],
+        "uglify" : true,
+      }
+    ))
+    .pipe(gulp.dest("app/js/venfor"))
+});
  
 gulp.task('prefix', function () {
    gulp.src('css/*.css')
@@ -33,4 +45,4 @@ gulp.task('watch', function () {
 });
 
 // Задача по-умолчанию
-gulp.task('default', ['server', 'watch']);
+gulp.task('default', ['modernizr', 'server', 'watch']);
