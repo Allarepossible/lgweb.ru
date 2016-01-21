@@ -4,31 +4,36 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="1230, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
+	<meta name="description" content="Эта страница обо мне">
+	<meta name="keywords" content="Frontend разработчик">
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/stylesheet.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Project</title>
+	<link rel="icon" type="image/x-icon" href="images/icon.ico">
+	<title>Обо мне</title>
+	 <!--[if IE]>
+	<link rel="stylesheet" href="css/stylesheetie.css">	
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 <body>
 <div class="wrapper">
-	<header class="header">
-		<div class="header_container">
-			<a href="/path/" class="logo">
-				<img class="logo-img" src="images/logo.png" alt="loftschool">
+	<header class="header clearfix">
+		<div class="header_container clearfix">
+			<a href="index.html" class="logo">
+				<img class="logo-img" src="images/logo.png" alt="lgweb">
 				<span class="logo-text">
-					Loftschool. От мыслителя к создателю.
+					Leisan Gilfanova начинающий front-end разработчик.
 				</span>
 			</a>
-			<ul class="socials">
+			<ul class="socials clearfix">
 				<li class="socials-item">
-					<a href="#" class="icon icon-fb" alt="">
+					<a href="https://www.facebook.com/allarepossible" class="icon icon-fb" alt="">
 						facebook
 					</a>
 				</li>			
 				<li class="socials-item">
-					<a href="#" class="icon icon-vk" alt="">
+					<a href="http://vk.com/id121191631" class="icon icon-vk" alt="">
 						vkontakte
 					</a>
 				</li>
@@ -38,7 +43,7 @@
 					</a>
 				</li>
 				<li class="socials-item">
-					<a href="#" class="icon icon-git" alt="">
+					<a href="https://github.com/Allarepossible" class="icon icon-git" alt="">
 						github
 					</a>
 				</li>
@@ -46,26 +51,26 @@
 		</div>
 	</header>
 	<main class="content">
-		<aside class="sidebar">
+		<aside class="sidebar clearfix">
 			<nav class="nav">
 				<ul>
-					<li class="active"><a href="#">Обо мне</a></li>
-					<li><a href="#">Мои Работы</a></li>
-					<li><a href="#">Обратная связь</a></li>
+					<li class="active"><a href="/index.html">Обо мне</a></li>
+					<li><a href="/my_work.html">Мои Работы</a></li>
+					<li><a href="/feedback.html">Обратная связь</a></li>
 				</ul>
 			</nav>
-			<div class="contacts">
+			<div class="contacts clearfix">
 				<div class="contacts-title">Контакты</div>
 				<ul class="contacts-list">
-					<li class="gmail-cont">lisynok@list.ru</li>
-					<li class="tel-cont">+7 (916) 814-10-51</li>
-					<li class="skype-cont">Lisynok_93</li>
+					<li><a href="mailto:lisynok@list.ru" class="gmail-cont">lisynok@list.ru</a></li>
+					<li><a href="tel:+79168141051" class="tel-cont">+7 (916) 814-10-51</a></li>
+					<li><a href="skype:lisynok_93" class="skype-cont">Lisynok_93</a></li>
 				</ul>
 			</div>
 		</aside>
-		<div class="content-area">
-			<section class="information">
-				<div class="mainLine">Основная информация</div>
+		<div class="content-area  clearfix">
+			<section class="information  clearfix">
+				<div class="mainLine  clearfix">Основная информация</div>
 				<div class="main-information">
 					<div class="photo">
 						<div class="inner-photo">
@@ -83,7 +88,7 @@
 							<div class="skill">Css</div>
 							<div class="skill">Javascript</div>
 							<div class="skill">Git</div>
-							<div class="skill">Gupl</div>							
+							<div class="skill">Gulp</div>							
 							<div class="skill">Php</div>
 							<div class="skill">Angular</div>
 							<div class="skill">Xml</div>
@@ -91,8 +96,8 @@
 					</div>
 				</div>
 			</section>
-			<section class="information">	
-				<div class="mainLine">Опыт работы</div>	
+			<section class="information  clearfix">	
+				<div class="mainLine  clearfix">Опыт работы</div>	
 				<div class="workExp">
 					<ul>
 						<li class="org">
@@ -113,8 +118,8 @@
 					</ul>
 				</div>
 			</section>
-			<section class="information">	
-				<div class="mainLine">Образование</div>
+			<section class="information  clearfix">	
+				<div class="mainLine  clearfix">Образование</div>
 				<div class="Education">	
 					<ul>
 						<li class="org">
@@ -140,7 +145,7 @@
 	</main>
 	<div class="empty"></div>
 </div>
-<footer class="footer">
+<footer class="footer  clearfix">
 	<div class="footer_container">
 		<div class="icon enter">
 			<a href="#" class="enter_text" alt="">
