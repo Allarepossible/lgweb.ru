@@ -4,20 +4,26 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="1230, initial-scale=1">
+	<title>Обо мне</title>	
 	<meta name="description" content="Эта страница обо мне">
 	<meta name="keywords" content="Frontend разработчик">
+
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/stylesheet.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" type="image/x-icon" href="images/icon.ico">
-	<title>Обо мне</title>
+
 	<script src="js/venfor/modernizr.js"></script>
 	 <!--[if IE]>
-	<link rel="stylesheet" href="css/stylesheetie.css">	
+    <link rel="stylesheet" href="css/forie.css">
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
 <body>
+<!--[if lt IE 8]>
+ <p class="browsehappy">Ваш браузер <strong>устарел</strong>.
+Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
+ <![endif]-->
 <div class="wrapper">
 	<header class="header clearfix">
 		<div class="header_container clearfix">
@@ -51,7 +57,7 @@
 			</ul>
 		</div>
 	</header>
-	<main class="content">
+	<main class="content clearfix">
 		<aside class="sidebar clearfix">
 			<nav class="nav">
 				<ul>
@@ -69,9 +75,9 @@
 				</ul>
 			</div>
 		</aside>
-		<div class="content-area  clearfix">
-			<section class="information  clearfix">
-				<div class="mainLine  clearfix">Основная информация</div>
+		<div class="content-area clearfix">
+			<section class="information clearfix">
+				<div class="mainLine">Основная информация</div>
 				<div class="main-information">
 					<div class="photo">
 						<div class="inner-photo">
@@ -84,16 +90,16 @@
 						<p><span class="bold">Мой город:</span> Москва, Россия</span></p>
 						<p><span class="bold">Моя специализация:</span> FRONTEND разработчик</span></p>
 						<div class="navyki">Ключевые навыки:</div>
-						<div class="skills">
-							<div class="skill">Html</div>						
-							<div class="skill">Css</div>
-							<div class="skill">Javascript</div>
-							<div class="skill">Git</div>
-							<div class="skill">Gulp</div>							
-							<div class="skill">Php</div>
-							<div class="skill">Angular</div>
-							<div class="skill">Xml</div>
-						</div>							
+						<ul class="skills">
+							<li class="skill">Html</li>						
+							<li class="skill">Css</li>
+							<li class="skill">Javascript</li>
+							<li class="skill">Git</li>
+							<li class="skill">Gulp</li>							
+							<li class="skill">Php</li>
+							<li class="skill">Angular</li>
+							<li class="skill">Xml</li>
+						</ul>							
 					</div>
 				</div>
 			</section>
@@ -140,13 +146,12 @@
 						</li>
 					</ul>
 				</div>
-				</div>
 			</section>			
 		</div>
 	</main>
 	<div class="empty"></div>
 </div>
-<footer class="footer  clearfix">
+<footer class="footer clearfix">
 	<div class="footer_container">
 		<div class="icon enter">
 			<a href="#" class="enter_text" alt="">

@@ -1,0 +1,143 @@
+.project-list{
+	position: relative;
+	padding: 37px 10px 15px 42px;
+}
+.project{
+	vertical-align: top;
+	display: inline-block;
+	border: 2px solid #c5c5c5;
+    width: 164px;
+    overflow: hidden;
+	position: relative;
+	-webkit-border-radius: 5px;
+			border-radius: 5px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07);
+	   -moz-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07);
+			box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07);
+	margin-right: 27px;
+	margin-bottom: 25px;
+}
+.photo_project{
+	position: relative;
+	border-bottom: 1px solid #bfbfbf;
+	overflow: hidden;
+	height: 119px;
+	cursor: pointer;
+}
+.photo_project:before{
+	content: "";
+	display: block;
+	width: 164px;
+	height: 119px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-transition: opacity .4s ease-out;
+    -moz-transition: opacity .4s ease-out;
+    -ms-transition: opacity .4s ease-out;
+    -o-transition: opacity .4s ease-out;
+	transition: opacity .4s ease-out;
+    background: radial-gradient(transparent,rgba(0,0,0,.4));
+    background: -moz-radial-gradient(transparent,rgba(0,0,0,.4));
+    background: -webkit-radial-gradient(transparent,rgba(0,0,0,.4));
+}
+.photo_project:hover:before{
+	opacity: 0;
+}
+
+.name_project{
+	background: #f1f1f1;
+	font-family: "OpenSansBold";
+	font-size: 13px;
+	margin-top: -2px;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+    width: 164px;	
+}
+.project a{
+	text-decoration: none;
+	color: rgb(114, 112, 112);
+}
+.description_project{
+	padding: 6px;
+	font-size: 12px;
+	line-height: 16px;
+	font-family: "OpenSansLight";
+	color: rgb(114, 112, 112);
+	text-align: center;
+}
+
+.add_project{
+	height: 133px;
+	width: 164px;
+	background-image: -moz-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#edebea',GradientType=0 );
+	-webkit-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+	   -moz-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+			box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+}
+.add_project:before{
+	content: "";
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-border-radius: 50%;
+			border-radius: 50%;
+	background-color: #f7f7f7;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.8),inset 1px 1px 1px 0px rgba(199, 199, 199, 0.85);
+	   -moz-box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.8),inset 1px 1px 1px 0px rgba(199, 199, 199, 0.85);
+			box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.8),inset 1px 1px 1px 0px rgba(199, 199, 199, 0.85);
+	width: 53px;
+	height: 54px;
+}
+
+.add_project:after{
+	content: "";
+	position: absolute;
+	top: 41%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	display: block;
+	width: 21px;
+	height: 21px;
+	background: url(../images/pol.png);
+}
+
+.add_project:hover {
+	background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e7e7', endColorstr='#c2c0c0',GradientType=0 );
+	-webkit-box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+	   -moz-box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+			box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+}
+
+.add_project:hover:before {
+	background-color: #d7d7d7;
+	-webkit-box-shadow: 0px 1px -1px 0px rgba(255, 255, 255, 0.4),inset 0.5px 0.866px 0px 0px rgba(199, 199, 199, 0.75);
+	   -moz-box-shadow: 0px 1px -1px 0px rgba(255, 255, 255, 0.4),inset 0.5px 0.866px 0px 0px rgba(199, 199, 199, 0.75);
+			box-shadow: 0px 1px -1px 0px rgba(255, 255, 255, 0.4),inset 0.5px 0.866px 0px 0px rgba(199, 199, 199, 0.75);
+}
+.add_project_text{
+	color: rgb(114, 112, 112);
+	font-size: 14px;
+	font-family: "OpenSansSemiBold";
+	line-height: 1.571;
+	text-align: left;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+	position: absolute;
+	top: 67%;
+	left: 24px; 
+}

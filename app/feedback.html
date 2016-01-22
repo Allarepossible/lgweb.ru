@@ -4,22 +4,30 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="1230, initial-scale=1">
-	<meta name="description" content="Эта страница обо мне">
+	<title>Обратная связь</title>	
+	<meta name="description" content="Здесь можно отправить мне свой проект">
 	<meta name="keywords" content="Frontend разработчик">
+
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/stylesheet.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">	
+	<link rel="stylesheet" href="css/feedback.css">	
 	<link rel="icon" type="image/x-icon" href="images/icon.ico">
-	<title>Обо мне</title>
-	<script src="js/venfor/modernizr.js"></script>
 
+	<script src="js/venfor/modernizr.js"></script>
 	 <!--[if IE]>
-	<link rel="stylesheet" href="css/stylesheetie.css">	
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="css/forie.css">
+
 	<![endif]-->
+	
 </head>
 <body>
-<div class="wrapper">
+<!--[if lt IE 8]>
+ <p class="browsehappy">Ваш браузер <strong>устарел</strong>.
+Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
+ <![endif]-->
+ <div class="wrapper">
 	<header class="header clearfix">
 		<div class="header_container clearfix">
 			<a href="index.html" class="logo">
@@ -70,8 +78,8 @@
 				</ul>
 			</div>
 		</aside>
-		<div class="content-area  clearfix">
-			<section class="information  clearfix">
+		<div class="content-area clearfix">
+			<section class="information">
 				<div class="mainLine  clearfix">У вас интересный проект? Напишите мне</div>
 				<div class="contact_form">
 					<form action="#" method="get" class="form">
@@ -91,19 +99,16 @@
 						
 						<div class="buttons">
 							<button type="reset">Очистить</button>
-							<button type="submit">Отправить</button>
-							
-						</div>
+							<button type="submit">Отправить</button>		
 						</div>
 					</form>
 				</div>
 			</section>
 		</div>
-
 	</main>
 	<div class="empty"></div>
 </div>
-<footer class="footer  clearfix">
+<footer class="footer">
 	<div class="footer_container">
 		<div class="icon enter">
 			<a href="#" class="enter_text" alt="">

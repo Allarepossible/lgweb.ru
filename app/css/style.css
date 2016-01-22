@@ -195,7 +195,7 @@ header{
 	background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e7e7', endColorstr='#e9e6e5',GradientType=0 ); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e7e7', endColorstr='#e9e6e5', GradientType=0 ); 
 	-webkit-box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
 	   -moz-box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
 			box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
@@ -244,15 +244,14 @@ header{
 	position: relative;
 }
 
-.contacts li:after{
-	left: 48px;
-	top: 0;
+.contacts ul li a:after{
 	content: " ";
 	height: 37px;
-	width: 10px;
+	left: 48px;
 	position: absolute;
+	top: 0;
+	width: 10px;
     background-image: url(../images/arrow.png);
-    background-position: 0-1px;
 }
 
 
@@ -477,6 +476,7 @@ header{
 	   -moz-box-shadow: 0px 1px 0px 0px rgba(209, 209, 209, 0.95), 0px 1px 0px 0px rgba(0, 0, 0, 0.35);
 			box-shadow: 0px 1px 0px 0px rgba(209, 209, 209, 0.95), 0px 1px 0px 0px rgba(0, 0, 0, 0.35);
 }
+
 .org:before{
 	content: "";
 	position: absolute;
@@ -574,7 +574,6 @@ header{
 	background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#ffffff',GradientType=0 );
-
 	-webkit-box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
 	   -moz-box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
 			box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
@@ -625,274 +624,3 @@ header{
 	text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.85);
 }
 /***********   end Footer  **************/
-
-
-/***********   Projects  **************/
-.project-list{
-	position: relative;
-	padding: 37px 10px 15px 42px;
-}
-.project{
-	vertical-align: top;
-	display: inline-block;
-	border: 2px solid #c5c5c5;
-    width: 164px;
-    overflow: hidden;
-	position: relative;
-	-webkit-border-radius: 5px;
-			border-radius: 5px;
-	background-color: #fff;
-	-webkit-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07);
-	   -moz-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07);
-			box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07);
-	margin-right: 27px;
-	margin-bottom: 25px;
-}
-.photo_project{
-	position: relative;
-	border-bottom: 1px solid #bfbfbf;
-	overflow: hidden;
-	height: 119px;
-	cursor: pointer;
-}
-.photo_project:before{
-	content: "";
-	z-index: 6;
-	display: block;
-	width: 164px;
-	height: 119px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	-webkit-transition: opacity .4s ease-out;
-    -moz-transition: opacity .4s ease-out;
-    -ms-transition: opacity .4s ease-out;
-    -o-transition: opacity .4s ease-out;
-	transition: opacity .4s ease-out;
-    background: radial-gradient(transparent,rgba(0,0,0,.4));
-    background: -moz-radial-gradient(transparent,rgba(0,0,0,.4));
-    background: -webkit-radial-gradient(transparent,rgba(0,0,0,.4));
-}
-.photo_project:hover:before{
-	opacity: 0;
-}
-.name_project{
-	margin-top: -2px;
-    width: 164px;	
-	padding: 10px 0 10px 0;
-	font-size: 13px;
-	font-family: "OpenSansBold";
-	background-color: rgba(65, 64, 64, 0.071);
-	text-align: center;
-	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
-}
-.project a{
-	text-decoration: none;
-	color: rgb(114, 112, 112);
-}
-.description_project{
-	padding: 6px;
-	font-size: 12px;
-	line-height: 16px;
-	font-family: "OpenSansLight";
-	color: rgb(114, 112, 112);
-	text-align: center;
-}
-
-.add_project{
-	height: 133px;
-	width: 164px;
-	background-image: -moz-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-	background-image: -webkit-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-	-webkit-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
-	-moz-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
-	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
-}
-.add_project:before{
-	content: "";
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-o-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-	-webkit-border-radius: 50%;
-			border-radius: 50%;
-	background-color: #f7f7f7;
-	-webkit-box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.8),inset 1px 1px 1px 0px rgba(199, 199, 199, 0.85);
-	   -moz-box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.8),inset 1px 1px 1px 0px rgba(199, 199, 199, 0.85);
-			box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.8),inset 1px 1px 1px 0px rgba(199, 199, 199, 0.85);
-	width: 53px;
-	height: 54px;
-}
-.add_project:after{
-	content: "";
-	position: absolute;
-	top: 41%;
-	left: 50%;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-o-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-	display: block;
-	width: 21px;
-	height: 21px;
-	background: url(../images/pol.png);
-}
-
-.add_project:hover {
-  background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
-  box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
-}
-
-.add_project:hover:before {
-  background-color: #d7d7d7;
-  box-shadow: 0px 1px -1px 0px rgba(255, 255, 255, 0.4),inset 0.5px 0.866px 0px 0px rgba(199, 199, 199, 0.75);
-}
-.add_project_text{
-	color: rgb(114, 112, 112);
-	font-size: 14px;
-	font-family: "OpenSansSemiBold";
-	line-height: 1.571;
-	text-align: left;
-	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
-	position: absolute;
-	top: 67%;
-	left: 24px; 
-}
-
-.contact_form {
-	padding: 33px 40px 34px 124px;
-}
-.inputs{
-	display: inline-block;
-	margin-right: 15px;	
-	margin-bottom: 15px;
-}
-.contact_form label {
-	display: block;
-  font-size: 14px;
-  color: rgb(114, 112, 112);
-  line-height: 1.2;
-  margin-bottom: 7px;
-}
-.contact_form input{ 
-	font-size: 12px;
-	font-family: "OpenSansLight";
-	color: rgb(114, 112, 112);
-	padding-left: 8px;
-	height: 38px;
-	width: 182px;
-	border-radius: 3px;
-	border:1px solid rgb(214, 213, 211);
-	background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
-	background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
-	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
-}
-.contact_form input, .contact_form textarea::-webkit-input-placeholder{
-	font-size: 12px;
-	font-family: "OpenSansLight";
-	color: rgb(199, 198, 198);
-	line-height: 1.2;
-	text-align: left;
-}
-.contact_form textarea{ 
-	font-size: 12px;
-	font-family: "OpenSansLight";
-	color: rgb(114, 112, 112);
-	padding: 12px 9px 12px 9px;
-	line-height: 1.2;
-	height: 158px;
-	width: 383px;
-	border-radius: 3px;
-	margin-bottom: 13px;
-	border:1px solid rgb(214, 213, 211);
-	background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
-	background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
-	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
-}
-.antispam{
-	float: left;
-	width: 190px;
-	height: 79px;
-	position: relative;
-	display: inline-block;
-	border: 1px solid rgb(214, 213, 211);
-	border-radius: 4px;
-	background-color: #fff;
-	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35);
-	margin-bottom: 31px;
-}
-.antispam:before{
-	position: absolute;
-	top: 0;
-	left: 0;
-	content: "";
-	width: 189px;
-	height: 78px;
-	display: block;
-	background-image: url(../images/captcha.png);
-	background-position: center;
-	overflow: hidden;
-}
-.captcha{
-	display: inline-block;
-	margin-top: 22px;
-	margin-left: 20px;
-}
-input[type="captcha"]{
-	height: 29px;
-	font-size: 11px;
-}
-
-.buttons{
-	margin-left: 27px;
-	display: inline-block;
-	width: 346px;
-}
-.contact_form button {
-	position: relative;
-	font-size: 13px;
-	font-family: "OpenSansSemiBold";
-	color: rgb(114, 112, 112);
-	line-height: 1.571;
-	text-align: center;
-	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.55);
-	width: 125px;
-	height: 40px;
-	border: 1px solid rgb(214, 213, 211);
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	background-image: -moz-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-	background-image: -webkit-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
-}
-
-.contact_form button:hover{
-	color: rgb(30, 116, 101);
-	background-image: -moz-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
-	background-image: -webkit-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
-	box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
-}
-button[type="submit"]{
-	display: inline-block;
-	float: left;
-}
-
-button[type="reset"]{
-	display: inline-block;
-	float: right;
-}
-.contact_form input:focus, .contact_form textarea:focus {
-	border:1px solid rgb(72, 203, 232); 
-}
-
-

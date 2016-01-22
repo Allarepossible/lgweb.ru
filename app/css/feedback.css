@@ -1,0 +1,147 @@
+.contact_form {
+	padding: 33px 40px 34px 124px;
+}
+.inputs{
+	display: inline-block;
+	margin-right: 15px;	
+	margin-bottom: 15px;
+}
+.contact_form label {
+	display: block;
+	font-size: 14px;
+	color: rgb(114, 112, 112);
+	line-height: 1.2;
+	margin-bottom: 7px;
+}
+.contact_form input{ 
+	font-size: 12px;
+	font-family: "OpenSansLight";
+	color: rgb(114, 112, 112);
+	padding-left: 8px;
+	height: 38px;
+	width: 182px;
+	-webkit-border-radius: 3px;
+			border-radius: 3px;
+	border:1px solid rgb(214, 213, 211);
+	background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e9e7e7', GradientType=0 );
+	-webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+	   -moz-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+			box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+}
+.contact_form input, .contact_form textarea::-webkit-input-placeholder{
+	font-size: 12px;
+	font-family: "OpenSansLight";
+	color: rgb(199, 198, 198);
+	line-height: 1.2;
+	text-align: left;
+}
+.contact_form textarea{ 
+	font-size: 12px;
+	font-family: "OpenSansLight";
+	color: rgb(114, 112, 112);
+	padding: 12px 9px 12px 9px;
+	line-height: 1.2;
+	height: 158px;
+	width: 383px;
+	-webkit-border-radius: 3px;
+			border-radius: 3px;
+	margin-bottom: 13px;
+	border: 1px solid rgb(214, 213, 211);
+	background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e9e7e7', GradientType=0 );
+	-webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+	   -moz-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+			box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+}
+.antispam{
+	float: left;
+	width: 190px;
+	height: 79px;
+	position: relative;
+	display: inline-block;
+	border: 1px solid rgb(214, 213, 211);
+	-webkit-border-radius: 4px;
+			border-radius: 4px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35);
+	   -moz-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35);
+			box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35);
+	margin-bottom: 31px;
+}
+.antispam:before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	width: 189px;
+	height: 78px;
+	display: block;
+	background-image: url(../images/captcha.png);
+	background-position: center;
+	overflow: hidden;
+}
+.captcha{
+	display: inline-block;
+	margin-top: 22px;
+	margin-left: 20px;
+}
+input[type="captcha"]{
+	height: 29px;
+	font-size: 11px;
+}
+
+.buttons{
+	margin-left: 27px;
+	display: inline-block;
+	width: 346px;
+}
+.contact_form button {
+	position: relative;
+	font-size: 13px;
+	font-family: "OpenSansSemiBold";
+	color: rgb(114, 112, 112);
+	line-height: 1.571;
+	text-align: center;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.55);
+	width: 125px;
+	height: 40px;
+	border: 1px solid rgb(214, 213, 211);
+	-webkit-border-radius: 5px;
+			border-radius: 5px;
+	background-image: -moz-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e9e7e7', GradientType=0 );
+	-webkit-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+	   -moz-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+			box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);	
+}
+
+.contact_form button:hover{
+	color: rgb(30, 116, 101);
+	background-image: -moz-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5fdcbd', endColorstr='#3aa087', GradientType=0 );
+	-webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+	   -moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+			box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+}
+button[type="submit"]{
+	display: inline-block;
+	float: left;
+}
+
+button[type="reset"]{
+	display: inline-block;
+	float: right;
+}
+.contact_form input:focus, .contact_form textarea:focus {
+	border:1px solid rgb(72, 203, 232); 
+	color: rgb(114, 112, 112);
+}

@@ -1,0 +1,30 @@
+.org:before{
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	background-image: url(../images/circle.png);
+	width: 54px;
+	height: 55px;
+}
+.add_project:before{
+	content: "";
+	position: absolute;
+	top: 25px;
+	left: 55px;
+	background-image: url(../images/circle.png);
+	width: 54px;
+	height: 55px;
+}
+.add_project:after{
+	content: "";
+	position: absolute;
+	top: 43px;
+	left: 72px;
+	width: 21px;
+	height: 21px;
+	background: url(../images/pol.png);
+}
+.photo_project:hover{
+    background-color: rgba(0,0,0,.04));
+}
