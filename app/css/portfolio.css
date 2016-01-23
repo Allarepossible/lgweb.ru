@@ -1,4 +1,4 @@
-.project-list{
+.project_list{
 	position: relative;
 	padding: 37px 10px 15px 42px;
 }
@@ -91,7 +91,7 @@
 	transform: translateX(-50%) translateY(-50%);
 	-webkit-border-radius: 50%;
 			border-radius: 50%;
-	background-color: #f7f7f7;
+	background-color: rgba(199, 199, 199, 0);
 	-webkit-box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.8),inset 1px 1px 1px 0px rgba(199, 199, 199, 0.85);
 	   -moz-box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.8),inset 1px 1px 1px 0px rgba(199, 199, 199, 0.85);
 			box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.8),inset 1px 1px 1px 0px rgba(199, 199, 199, 0.85);

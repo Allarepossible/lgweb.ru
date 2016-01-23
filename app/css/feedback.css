@@ -104,44 +104,57 @@ input[type="captcha"]{
 	position: relative;
 	font-size: 13px;
 	font-family: "OpenSansSemiBold";
-	color: rgb(114, 112, 112);
+
 	line-height: 1.571;
 	text-align: center;
 	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.55);
 	width: 125px;
 	height: 40px;
-	border: 1px solid rgb(214, 213, 211);
 	-webkit-border-radius: 5px;
 			border-radius: 5px;
-	background-image: -moz-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-	background-image: -webkit-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e9e7e7', GradientType=0 );
-	-webkit-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
-	   -moz-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
-			box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);	
 }
-
-.contact_form button:hover{
+button[type="submit"]{
 	color: rgb(30, 116, 101);
+	border: 1px solid #3fa78a;
+	border-top: 1px solid #6adbbc;
+	background-image: -moz-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80e8cb', endColorstr='#43b796', GradientType=0 );		
+	-webkit-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16);
+	   -moz-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16);
+			box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16);
+	float: left;		
+}
+button[type="submit"]:hover{
 	background-image: -moz-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5fdcbd', endColorstr='#3aa087', GradientType=0 );
-	-webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
-	   -moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
-			box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
 }
-button[type="submit"]{
-	display: inline-block;
-	float: left;
-}
-
 button[type="reset"]{
-	display: inline-block;
+	color: rgb(114, 112, 112);	
+	border: 1px solid #bbbbbb;
+	border-top: 1px solid #d2d2d2;
+	background-image: -moz-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e9e6e4', GradientType=0 );
+	-webkit-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+       -moz-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+	 		box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);			
 	float: right;
+}
+button[type="reset"]:hover{
+	background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e7e7', endColorstr='#c2c0c0', GradientType=0 );
 }
 .contact_form input:focus, .contact_form textarea:focus {
 	border:1px solid rgb(72, 203, 232); 
 	color: rgb(114, 112, 112);
+}
+textarea{
+	resize:none;
 }
