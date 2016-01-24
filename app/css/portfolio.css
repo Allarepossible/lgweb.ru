@@ -104,6 +104,7 @@
 	position: absolute;
 	top: 41%;
 	left: 50%;
+	background-image: none;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	-moz-transform: translateY(-50%) translateY(-50%);
 	-ms-transform: translateX(-50%) translateY(-50%);

@@ -1,10 +1,16 @@
 .contact_form {
-	padding: 33px 40px 34px 124px;
+	padding: 33px 122px 34px 122px;
 }
+
 .inputs{
-	display: inline-block;
-	margin-right: 15px;	
+	width: 48%;
 	margin-bottom: 15px;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
 }
 .contact_form label {
 	display: block;
@@ -12,14 +18,18 @@
 	color: rgb(114, 112, 112);
 	line-height: 1.2;
 	margin-bottom: 7px;
+	cursor: pointer;
 }
 .contact_form input{ 
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	font-size: 12px;
 	font-family: "OpenSansLight";
 	color: rgb(114, 112, 112);
 	padding-left: 8px;
-	height: 38px;
-	width: 182px;
+	height: 42px;
+	width: 100%;
 	-webkit-border-radius: 3px;
 			border-radius: 3px;
 	border:1px solid rgb(214, 213, 211);
@@ -38,14 +48,17 @@
 	line-height: 1.2;
 	text-align: left;
 }
-.contact_form textarea{ 
+.contact_form textarea{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box; 
 	font-size: 12px;
 	font-family: "OpenSansLight";
 	color: rgb(114, 112, 112);
 	padding: 12px 9px 12px 9px;
 	line-height: 1.2;
-	height: 158px;
-	width: 383px;
+	height: 185px;
+	width: 100%;
 	-webkit-border-radius: 3px;
 			border-radius: 3px;
 	margin-bottom: 13px;
@@ -61,7 +74,7 @@
 .antispam{
 	float: left;
 	width: 190px;
-	height: 79px;
+	height: 77px;
 	position: relative;
 	border: 1px solid rgb(214, 213, 211);
 	-webkit-border-radius: 4px;
@@ -70,7 +83,7 @@
 	-webkit-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.35);
 	   -moz-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.35);
 			box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.35);
-	margin-bottom: 31px;
+	margin-bottom: 33px;
 }
 .antispam:before{
 	position: absolute;
@@ -78,37 +91,37 @@
 	left: 0;
 	content: "";
 	width: 189px;
-	height: 78px;
+	height: 77px;
 	display: block;
 	background-image: url(../images/captcha.png);
 	background-position: center;
 	overflow: hidden;
 }
 .captcha{
-	display: inline-block;
-	margin-top: 22px;
-	margin-left: 20px;
+	width: 48%;
+	margin-top: 21px;
+	float: right;
 }
 input[type="captcha"]{
-	height: 29px;
-	font-size: 11px;
+	padding-left: 8px;
+	line-height: 1;
+	font-size: 12px;
+	height: 32px;
 }
 
 .buttons{
-	margin-left: 27px;
+	margin-left: 30px;
 	display: inline-block;
-	width: 346px;
+	width: 344px;
 }
 .contact_form button {
 	position: relative;
-	font-size: 13px;
+	font-size: 14px;
 	font-family: "OpenSansSemiBold";
-
-	line-height: 1.571;
 	text-align: center;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.55);
-	width: 125px;
-	height: 40px;
+	width: 123px;
+	height: 38px;
 	-webkit-border-radius: 5px;
 			border-radius: 5px;
 }
