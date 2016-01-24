@@ -96,6 +96,7 @@
 			box-shadow: 1px 1px 1px 0 rgba(255, 255, 255, 0.8),inset 1px 1px 1px 0 rgba(199, 199, 199, 0.85);
 	width: 53px;
 	height: 54px;
+	background-image: none;
 }
 
 .add_project:after{
@@ -109,9 +110,9 @@
 	-o-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 	display: block;
-	width: 21px;
-	height: 21px;
-	background: url(../images/pol.png);
+    width: 21px;
+    height: 21px;
+    background-position: -34px -148px;
 }
 
 .add_project:hover {

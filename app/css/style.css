@@ -78,7 +78,7 @@ header{
 	position: relative;
 }
 .header_container{
-	width: 1200px;
+	width: 1204px;
 	margin: 0 auto;
 }
 .header{
@@ -100,64 +100,82 @@ header{
 
 .socials{
 	position: relative;
-	margin-top: 23px;
+	margin-top: 26px;
 	float: right;
 }
 .socials_item{
+	cursor: pointer;
 	position: relative;
 	display: inline-block;
-	margin-left: 6px;
+	margin-left: 10px;
 	white-space: nowrap;
 	text-indent: -9999px;
-	overflow: hidden;
+	border-radius: 50%;
+	width: 38px;
+	height: 38px;
+	background-image: -moz-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	box-shadow: 0 2px 1px 0 rgba(9, 9, 9, 0.31),inset 0 -2px 3px 0 rgba(41, 41, 41, 0.05);
 }
 
-.icon {
+.icon, 
+.icon:before, 
+.icon:after {
     background-image: url(../images/spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
-.icon:before {
-	   background-image: url(../images/spritesheet.png);
-    display: block;
-}
+
 .icon_fb {
-    cursor: pointer;
-    width: 42px;
-    height: 44px;
-    background-position: -64px -5px;
+	position: absolute;
+	top: 9px;
+	left: 14px;
+	cursor: pointer;
+    width: 10px;
+    height: 22px;
+    background-position: -38px -58px;
 }
 .icon_fb:hover {
-    background-position: -116px -5px;
+    background-position: -134px -58px;
 }
 .icon_git {
+	position: absolute;
+	top: 9px;
+	left: 5px;
     cursor: pointer;
-    width: 42px;
-    height: 44px;
-    background-position: -31px -59px;
+    width: 29px;
+    height: 23px;
+    background-position: -58px -89px;
 }
 
 .icon_git:hover {
-    background-position: -83px -59px;
+    background-position: -5px -90px;
 }
 .icon_tw {
+	position: absolute;
+	top: 9px;
+	left: 7px;
     cursor: pointer;    
-    width: 42px;
-    height: 44px;
-    background-position: -92px -117px;
+    width: 24px;
+    height: 18px;
+    background-position: -182px -91px;
 }
 .icon_tw:hover {
-    background-position: -166px -2px;
+    background-position: -97px -119px;
 }
 .icon_vk {
+	position: absolute;
+	top: 10px;
+	left: 12px;
     cursor: pointer;
-    width: 42px;
-    height: 44px;
-    background-position: -173px -87px;
+    width: 15px;
+    height: 19px;
+    background-position: -207px -59px;
 }
 
 .icon_vk:hover {
-    background-position: -142px -141px;
+    background-position: -182px -151px;
 }
 .content{
 	width: 960px;
@@ -186,7 +204,7 @@ header{
 	background: -o-linear-gradient(#ffffff 0%, #e9e6e5 100%);
 	background: -ms-linear-gradient(#ffffff 0%, #e9e6e5 100%);
 	background: linear-gradient(#ffffff 0%, #e9e6e5 100%); 
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f3f2', GradientType=0 )"; 
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e9e6e5', GradientType=0 )"; 
 	border: 1px solid #c5c5c5;
 	border-top: none;
 	-webkit-box-shadow: 0 2px 1px 0 rgba(9, 9, 9, 0.07),inset 0 -2px 3px 0 rgba(41, 41, 41, 0.05);
@@ -258,8 +276,7 @@ header{
 	color: rgb(208, 152, 44);
 	font-family: "OpenSansSemiBold";
 	font-size: 20px;
-	line-height: 1.1;
-	padding: 10px 26px 10px 26px;
+	padding: 10px 26px 12px 26px;
 	text-align: left;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
@@ -269,19 +286,19 @@ header{
 
 .contacts a:after{
 	content: " ";
-	height: 37px;
 	left: 48px;
 	position: absolute;
 	top: 0;
-	width: 10px;
-    background-image: url(../images/arrow.png);
+    width: 10px;
+    height: 38px;
+    background-position: -50px -5px;
 }
 
 .contacts a{
 	position: relative;
 	display: block;
 	text-decoration: none;
-	padding: 12px 14px 11px 97px;
+	padding: 12px 14px 10px 97px;
 	overflow: hidden;
 	font-size: 13px;
 	color: #888787;
@@ -303,9 +320,9 @@ header{
 	position: absolute;
 	top: 12px;
 	left: 18px;
-	width: 17px;
-    height: 13px;		
-    background-position: -37px -5px;
+    width: 17px;
+    height: 13px;
+    background-position: -155px -35px;
 }
 .tel_cont:before{
 	content: '';
@@ -314,7 +331,7 @@ header{
 	left: 18px;		
     width: 17px;
     height: 22px;
-    background-position: -67px -120px;
+    background-position: -180px -59px;
 }
 .skype_cont:before{
 	content: '';
@@ -323,7 +340,7 @@ header{
 	left: 18px;
     width: 20px;
     height: 20px;
-    background-position: -37px -120px;
+    background-position: -140px -153px;
 }
 .contacts li:last-child a{
 	-webkit-border-radius: 0 0 4px 4px;
@@ -345,7 +362,7 @@ header{
 
 .content_area{
 	float: right;
-	width: 652px;
+	width: 651px;
 }
 .information{
 	display: block;
@@ -376,15 +393,18 @@ header{
 	-webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
 	   -moz-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
 			box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
-	padding: 13px 41px 18px 41px;
+	padding: 12px 41px 17px 41px;
 	border: 1px solid #636363;
 	border-top: 1px solid #9c9c9c;
 	-webkit-border-radius: 5px 5px 0 0;
 	   -moz-border-radius: 5px 5px 0 0;
 			border-radius: 5px 5px 0 0;
 }
+.pad{
+	padding: 15px 41px 17px 41px;	
+}
 .main_information {
-	padding: 40px 40px 34px 42px;
+	padding: 39px 40px 34px 42px;
 }
 .photo{
 	display: inline-block;
@@ -416,7 +436,7 @@ header{
 .info{
 	margin-top: -9px;
 	width: 377px;
-	line-height: 25px;
+	line-height: 1.77;
 	display: inline-block;
 	vertical-align: top;
 	text-align: left;
@@ -426,27 +446,27 @@ header{
 	font-family: "OpenSansSemiBold";
 }
 .navyki{
-	margin-top: 10px;
+	margin-top: 9px;
 	display: inline-block;
 	vertical-align: top;
 	font-family: "OpenSansSemiBold";
 }
 .skills{
-	margin-top: 10px;
+	margin-top: 9px;
 	display: inline-block;
-	width: 233px;
+	width: 240px;
 	margin-left: -5px;
 }
 .skill{
 	display: inline-block;
-	margin-left: 24px;
-	padding-left: 2px;
-	padding-right: 3px;
+	margin-left: 22px;
+	padding-right: 7px;
 	position: relative;
+	line-height: 2.8;
 	background: url(../images/skill2.png) repeat-x;
 	text-transform: uppercase;
 	font-size: 9px;
-	font-family: "OpenSansSemiBold";
+	font-family: "OpenSansBold";
 	color: #1e7465;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
 }
@@ -456,9 +476,9 @@ header{
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 25px;
-	width: 15px;
-	background-image: url(../images/skill1.png)
+    width: 15px;
+    height: 25px;
+    background-position: -97px -148px;
 }
 .skill:after{
 	content: '';
@@ -466,12 +486,12 @@ header{
 	position: absolute;
 	top: 0;
 	right: 0;
-	height: 25px;
-	width: 5px;
-	background-image: url(../images/skill3.png)
+    width: 8px;
+    height: 25px;
+    background-position: -122px -148px;
 }
 .Education {
-	padding: 17px 40px 21px 42px;
+	padding: 19px 40px 21px 42px;
 }
 .org:last-child {
 	-webkit-box-shadow:none;
@@ -482,10 +502,11 @@ header{
 .org{
 	position: relative;
 	color: rgb(114, 112, 112);
-	padding: 25px 0 25px 0;
-	line-height: 1.3;
+	padding: 25px 0 24px 0;
+	line-height: 1.4;
 	text-align: left;
 	border-bottom: 1px solid #dbdbda;
+	background-image: none;	
 	-webkit-box-shadow: 0 1px 0 0 rgba(209, 209, 209, 0.95), 0 1px 0 0 rgba(0, 0, 0, 0.35);
 	   -moz-box-shadow: 0 1px 0 0 rgba(209, 209, 209, 0.95), 0 1px 0 0 rgba(0, 0, 0, 0.35);
 			box-shadow: 0 1px 0 0 rgba(209, 209, 209, 0.95), 0 1px 0 0 rgba(0, 0, 0, 0.35);
@@ -495,6 +516,7 @@ header{
 	position: absolute;
 	top: 51%;
 	left: 0;
+	background-image: none;	
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
@@ -520,7 +542,7 @@ header{
 .icon_work{
     width: 22px;
     height: 20px;
-    background-position: -5px -5px;	
+    background-position: -134px -5px;
 	position: absolute;
 	top: 51%;
 	left: 17px;
@@ -533,7 +555,7 @@ header{
 .icon_school{
     width: 22px;
     height: 22px;
-    background-position: -5px -120px;
+    background-position: -65px -148px;
 	position: absolute;
 	top: 51%;
 	left: 18px;
@@ -546,7 +568,7 @@ header{
 .icon_vus{
     width: 28px;
     height: 19px;
-    background-position: -135px -59px;
+    background-position: -97px -90px;
 	position: absolute;
 	top: 53%;
 	left: 14px;
@@ -559,7 +581,7 @@ header{
 .icon_course{
     width: 16px;
     height: 21px;
-    background-position: -5px -59px;
+    background-position: -154px -58px;
 	position: absolute;
 	top: 53%;
 	left: 20px;
@@ -590,7 +612,7 @@ header{
 	width: 960px;
 	margin: 20px auto;
 	font-size: 12px;
-	line-height: 1.8;		
+	line-height: 1.9;		
 }
 .footer_text{
 	display: inline-block;
@@ -604,14 +626,14 @@ header{
 	display: inline-block;
     width: 24px;
     height: 22px;
-    background-position: -135px -88px;
+    background-position: -5px -148px;
     cursor: pointer;
 }
 
 .enter:hover{
     width: 24px;
     height: 22px;
-    background-position: -173px -55px;
+    background-position: -182px -119px;
 }
 .enter_text{
 	margin-left: 29px;

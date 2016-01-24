@@ -1,30 +1,77 @@
+.org{
+	padding: none;
+	border-top: 1px solid #dbdbda;
+	border-bottom: none;
+}
+.org:first-child {
+	border-top: none;
+}
 .org:before{
-	content: "";
 	position: absolute;
-	top: 2px;
-	left: 2px;
-	background-image: url(../images/circle.png);
-	width: 54px;
-	height: 55px;
+	top: 32%;
+	left: 1px;
+	background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    width: 54px;
+    height: 55px;
+    background-position: -70px -5px;
 }
-.add_project:before{
-	content: "";
+.work{
+	margin-top: 10px;
+}
+.icon_work{
 	position: absolute;
-	top: 25px;
-	left: 55px;
-	background-image: url(../images/circle.png);
-	width: 54px;
-	height: 55px;
+	top: 52%;
+	left: 17px;
+	-ms-transform: translateY(-50%); 
 }
-.add_project:after{
-	content: "";
+.icon_school{
 	position: absolute;
-	top: 43px;
-	left: 72px;
-	width: 21px;
-	height: 21px;
-	background: url(../images/pol.png);
+	top: 50%;
+	left: 18px;
+	-ms-transform: translateY(-50%);
 }
-.photo_project:hover{
-    background-color: rgba(0,0,0,.04));
+.icon_vus{
+	position: absolute;
+	top: 55%;
+	left: 14px;
+	-ms-transform: translateY(-50%);
+}
+.icon_course{
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	-ms-transform: translateY(-50%);
+}
+
+
+.socials_item{
+	background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 44px;
+    background-position: -182px -5px;
+}
+
+.icon_fb {
+	position: absolute;
+	top: 11px;
+	left: 16px;
+}
+
+.icon_git {
+	position: absolute;
+	top: 11px;
+	left: 7px;
+}
+
+.icon_tw {
+	position: absolute;
+	top: 13px;
+	left: 9px;
+}
+.icon_vk {
+	position: absolute;
+	top: 13px;
+	left: 14px;
 }
