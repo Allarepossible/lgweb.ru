@@ -75,3 +75,8 @@
 	top: 13px;
 	left: 14px;
 }
+
+.photo_project img:hover{
+    filter: alpha(Opacity=65);
+    opacity: 0.65;
+}
