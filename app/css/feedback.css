@@ -41,12 +41,31 @@
 	   -moz-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.35),inset 0 2px 2px 0 rgba(114, 112, 112, 0.1);
 			box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.35),inset 0 2px 2px 0 rgba(114, 112, 112, 0.1);
 }
-.contact_form input, .contact_form textarea::-webkit-input-placeholder{
+
+.no-cssgradients .contact_form input{
+	padding: 12px 8px 5px 8px;
+}
+*::-webkit-input-placeholder{
 	font-size: 12px;
 	font-family: "OpenSansLight";
 	color: rgb(199, 198, 198);
 	line-height: 1.2;
 	text-align: left;
+}
+*:-moz-placeholder{
+	font-size: 12px;
+	font-family: "OpenSansLight";
+	color: rgb(199, 198, 198);
+	line-height: 1.2;
+	text-align: left;
+}
+*:-ms-input-placeholder {
+	font-size: 12px;
+	font-family: "OpenSansLight";
+	color: rgb(199, 198, 198);
+	line-height: 1.2;
+	text-align: left;
+	padding-top: 2px;
 }
 .contact_form textarea{
 	box-sizing: border-box;
@@ -108,7 +127,9 @@ input[type="captcha"]{
 	font-size: 12px;
 	height: 32px;
 }
-
+.no-cssgradients input[type="captcha"]{
+	padding-top: 9px;
+}
 .buttons{
 	margin-left: 30px;
 	display: inline-block;
