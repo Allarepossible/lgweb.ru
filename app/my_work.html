@@ -94,16 +94,39 @@
 							<div class="description_project">Сайт визитка компании Plasten по продаже термопласт-автоматов.</div>
 						</li>
 						<li class="project">
-							<a href=""><div class="add_project icon">
+							<a href="javascript:PopUpShow()"><div class="add_project icon">
 								<div class="add_project_text">Добавить проект</div>
 							</div></a>
 						</li>
 					</ul>
 				</div>
+
 			</section>			
 		</div>
 	</main>
+	
 	<div class="empty clearfix"></div>
+</div>
+<div class="b-popup clearfix" id="popup1">
+    <div class="b-popup-content">
+   	<a href="javascript:PopUpHide()" class="hide_project icon"></a>
+        <div class="add_project_form">
+			<form action="#" method="get" class="form">
+					<label for="input_name_project">Название проекта</label>
+						<input id="input_name_project" type="text" name="name_project" placeholder="Введите название">
+					<label for="img_project">Картинка проекта</label>
+					<div class="img_project icon">
+						<input id="img_project" type="img" name="img_project" placeholder="Загрузите изображение">
+					</div>
+					<label for="url_project">URL проекта</label>
+						<input id="url_project" type="url" name="url_project" placeholder="Добавьте ссылку">
+					<div class="input_description"><label for="input_description">Описание</label>
+						<textarea id="input_descruption" name="description" cols="40" rows="6"   placeholder="Пара слов о вашем проекте" ></textarea>
+					</div>			
+						<button type="submit">Добавить</button>		
+				</form>
+			</div>
+    </div>
 </div>
 <footer class="footer clearfix">
 	<div class="footer_container">
@@ -117,5 +140,7 @@
 	</div>
 </footer>
 <script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

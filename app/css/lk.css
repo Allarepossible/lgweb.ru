@@ -9,6 +9,7 @@
 	transform: translateY(-50%);
 }
 .text_auth{
+	width: 332px;
 	font-size: 12px;
 	font-family: "OpenSansLight";
 	color: rgb(114, 112, 112);
@@ -26,7 +27,7 @@
 	border: 1px solid #b6b6b6;
 	border-top: 1px solid #d2d2d2;
 	width: 332px;
-	height: 280px;
+	height: 100%;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -114,7 +115,8 @@ button[type="submit"]{
 	text-align: center;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.55);
 	width: 150px;
-	height: 38px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	-webkit-border-radius: 5px;
 			border-radius: 5px;
 	color: rgb(30, 116, 101);
@@ -136,9 +138,6 @@ button[type="submit"]:hover{
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#5fdcbd', endColorstr='#3aa087', GradientType=0 )";
 }
 
-
-
-
 .tch{
 	display: inline-block;
 	vertical-align: top;
@@ -146,31 +145,22 @@ button[type="submit"]:hover{
 	color: rgb(114, 112, 112);
 	line-height: 1.2;
 	cursor: pointer;
-	margin-left: 30px;
-}
-
-
-.tch{
-	display: inline-block;
-    position: relative;
-	font-size: 14px;
-	color: rgb(114, 112, 112);
-	line-height: 1.2;
-	cursor: pointer;
-	margin-left: 10px;
+	margin-left: 20px;
+	margin-top: -7px;
+	margin-bottom: 50px;
 }
 
 label {
+	margin-top: -7px;
     width: 11px;
     height: 11px;
-    display: inline-block;
-    position: relative;
+    position: relative;	
 }
 input[type="checkbox"] + span {
     position: absolute;
     left: 0; top: 0;
-    width: 100%;
-    height: 100%;
+    width: 17px;
+    height: 17px;
 	border-radius: 3px;
 	background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
@@ -180,6 +170,7 @@ input[type="checkbox"] + span {
 }
 input[type="checkbox"]:checked + span {
     background-image: url(../images/spritesheet.png);
+    margin: 2px;
     width: 9px;
     height: 8px;
     background-position: -5px -35px;
