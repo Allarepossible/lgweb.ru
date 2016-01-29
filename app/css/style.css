@@ -58,8 +58,7 @@ html, body {
 body{
 	font-family: "OpenSansRegular", Arial, sans-serif;
 	font-size: 88%;
-    background-image: url(../images/bg.jpg);
-    background-position: center 0;
+    background: url(../images/bg.jpg) no-repeat;
     -webkit-background-size: cover;
     		background-size: cover;
 }
@@ -85,8 +84,10 @@ header{
 	margin-bottom: 35px;
 }
 .logo_img {
+	display: block;
+	float: left;
 	width: 95px;
-	height: 71px;
+	height: 72px;
 	margin: 10px;
 	cursor: pointer;
 }
@@ -188,7 +189,7 @@ header{
 .nav{
 	margin-bottom: 35px;
 }
-.nav a{
+.navigation{
 	position: relative;
 	display: block;
 	font-family: "OpenSansSemiBold";
@@ -212,19 +213,19 @@ header{
 			box-shadow: 0 2px 1px 0 rgba(9, 9, 9, 0.07),inset 0 -2px 3px 0 rgba(41, 41, 41, 0.05);
 }
 
-.navigation:last-child a{
+.nav_list:last-child a{
 	-webkit-border-radius: 0 0 4px 4px;
 	   -moz-border-radius: 0 0 4px 4px;
 	        border-radius: 0 0 4px 4px;
 }
-.navigation:first-child a{
+.nav_list:first-child a{
 	border-top: 1px solid #c5c5c5;
 	-webkit-border-radius: 4px 4px 0 0;
 	   -moz-border-radius: 4px 4px 0 0;
 	        border-radius: 4px 4px 0 0;
 }
 
-.navigation a:hover{ 
+.navigation:hover{ 
 	background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
 	background: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
@@ -233,7 +234,7 @@ header{
 	   -moz-box-shadow: inset 0 -2px 3px 0 rgba(41, 41, 41, 0.05);
 			box-shadow: inset 0 -2px 3px 0 rgba(41, 41, 41, 0.05);
 }
-.active a{
+.active{
 	color: #1e7465;
 	border: 1px solid #40ab91;
 	border-top: 1px solid #66dbbe;
@@ -248,7 +249,7 @@ header{
 	   -moz-box-shadow: 0 2px 1px 0 rgba(9, 9, 9, 0.16),inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
 			box-shadow: 0 2px 1px 0 rgba(9, 9, 9, 0.16),inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
 }
-.active:hover a{
+.active:hover{
 	background-image: -moz-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
@@ -346,7 +347,7 @@ header{
     height: 20px;
     background-position: -140px -153px;
 }
-.contacts li:last-child a{
+.contacts li:last-child{
 	-webkit-border-radius: 0 0 4px 4px;
 	   -moz-border-radius: 0 0 4px 4px;
 	        border-radius: 0 0 4px 4px;
@@ -384,7 +385,7 @@ header{
 	   -moz-border-radius:  5px;
 	   		border-radius:  5px;
 }
-.mainLine{
+.main_line{
 	font-size: 24px;
 	font-family: "OpenSansSemiBold";
 	color: #eeedec;
@@ -426,7 +427,7 @@ header{
 			box-shadow: 3px 2px 27px 5px rgba(236, 232, 227, 0.75),inset 0 2px 24px 0 rgba(121, 121, 121, 0.23);
 }
 
- .inner_photo{
+.inner_photo{
  	position: absolute;
  	left: 9px;
  	top: 9px;
@@ -446,9 +447,19 @@ header{
 	text-align: left;
 	margin-left: 31px;
 }
-.bold{
+.info_name{
+	vertical-align: top;
+	max-width: 170px;
+	display: inline-block;
 	font-family: "OpenSansSemiBold";
 }
+.info_more{
+	vertical-align: top;
+	display: inline-block;
+	width: 200px;
+	margin-left: 3px;
+}
+
 .navyki{
 	margin-top: 9px;
 	display: inline-block;
@@ -494,7 +505,7 @@ header{
     height: 25px;
     background-position: -122px -148px;
 }
-.Education {
+.education {
 	padding: 19px 40px 21px 42px;
 }
 .org:last-child {
@@ -539,7 +550,7 @@ header{
 	display: inline-block;
 	margin-left: 97px;
 }
-.Data{
+.data{
 	display: block;
 	line-height: 1.7;
 }
