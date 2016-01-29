@@ -1,6 +1,6 @@
 .project_list{
 	position: relative;
-	padding: 37px 10px 15px 42px;
+	padding: 36px 19px 15px 15px;
 }
 .project{
 	vertical-align: top;
@@ -15,7 +15,7 @@
 	-webkit-box-shadow: 0 2px 1px 0 rgba(9, 9, 9, 0.07);
 	   -moz-box-shadow: 0 2px 1px 0 rgba(9, 9, 9, 0.07);
 			box-shadow: 0 2px 1px 0 rgba(9, 9, 9, 0.07);
-	margin-right: 27px;
+	margin-left: 27px;
 	margin-bottom: 25px;
 }
 .photo_project{
