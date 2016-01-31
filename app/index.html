@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=1205">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Обо мне</title>	
 	<meta name="description" content="Эта страница обо мне">
 	<meta name="keywords" content="Frontend разработчик">
@@ -30,6 +30,7 @@
 					Leisan Gilfanova начинающий front-end разработчик.
 				</span>
 			</a>
+			<div class="nav_icon icon" id="pull"></div>
 			<ul class="socials clearfix">
 				<li class="socials_item">
 					<a href="https://www.facebook.com/allarepossible" class="icon icon_fb" target="_blank">
@@ -57,6 +58,7 @@
 	<main class="content clearfix">
 		<aside class="sidebar clearfix">
 			<nav class="nav">
+				<div class="nav_list"><div class="tr3"></div></div>
 				<ul>
 					<li class="nav_list"><a href="/index.html" class="navigation active">Обо мне</a></li>
 					<li class="nav_list"><a href="/my_work.html" class="navigation">Мои Работы</a></li>
@@ -101,9 +103,9 @@
 				</div>
 			</section>
 			<section class="information clearfix">	
-				<div class="main_line"><h2>Опыт работы</h2></div>	
-				<div class="education">
-					<ul>
+				<div class="main_line"><h2>Опыт работы</h2></div>
+				<div class="main_information">
+					<ul class="education">
 						<li class="org icon">
 						<i class="icon icon_work"></i>
 							<div class="work">
@@ -125,10 +127,10 @@
 					</ul>
 				</div>
 			</section>
-			<section class="information  clearfix">	
+			<section class="information last clearfix">	
 				<div class="main_line"><h2>Образование</h2></div>
-				<div class="education">	
-					<ul>
+				<div class="main_information">	
+					<ul class="education">
 						<li class="org icon">
 						<i class="icon icon_school"></i>
 							<div class="work">
@@ -166,5 +168,7 @@
 	</div>
 </footer>
 <script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

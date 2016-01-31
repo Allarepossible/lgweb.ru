@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=1205">
-	<title>Мои работы</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Мои работы</title>
 	<meta name="description" content="Здесь представлены мои работы">
 	<meta name="keywords" content="Frontend разработчик">
 	<link rel="stylesheet" href="css/stylesheet.css">
@@ -31,6 +31,7 @@
 					Leisan Gilfanova начинающий front-end разработчик.
 				</span>
 			</a>
+			<div class="nav_icon icon" id="pull"></div>
 			<ul class="socials clearfix">
 				<li class="socials_item">
 					<a href="https://www.facebook.com/allarepossible" class="icon icon_fb" target="_blank">
@@ -58,6 +59,7 @@
 	<main class="content clearfix">
 		<aside class="sidebar clearfix">
 			<nav class="nav">
+				<div class="nav_list"><div class="tr3"></div></div>
 				<ul>
 					<li class="nav_list"><a href="/index.html" class="navigation">Обо мне</a></li>
 					<li class="nav_list"><a href="/my_work.html" class="navigation active">Мои Работы</a></li>
@@ -74,30 +76,59 @@
 			</div>
 		</aside>
 		<div class="content_area clearfix">
-			<section class="information clearfix">
+			<section class="information last clearfix">
 				<div class="main_line"><h1>Мои работы</h1></div>
-				<div class="projecs">
+				<div class="main_information">
 					<ul class="project_list">
-						<li class="project">
-							<a href="http://lgweb.ru/" target="_blank"><div class="photo_project"><img src="images/lgweb.jpg" alt="Lgweb.ru"></div>
-							<div class="name_project">lgweb.ru</div></a>
-							<div class="description_project">Личный сайт-портфолио от студии loftschool.</div>
+						<li class="project_item">
+							<a href="http://lgweb.ru/" target="_blank" class="project">
+								<div class="photo_project">
+									<img src="images/lgweb.jpg" alt="Lgweb.ru" class="photo_img">
+								</div>
+								<div class="name_project">
+									lgweb.ru
+								</div>
+								<div class="description_project">
+									Личный сайт-портфолио от студии loftschool.
+								</div>
+							</a>
 						</li>
-						<li class="project">
-							<a href="http://profcomff.ru/" target="_blank"><div class="photo_project"><img src="images/profcom.jpg" alt="profcomff.ru"></div>
-							<div class="name_project">profcomff.ru</div></a>
-							<div class="description_project">Сайт студенческого профкома физического факультета.</div>
+						<li class="project_item">
+							<a href="http://profcomff.ru/" target="_blank" class="project">
+								<div class="photo_project">
+									<img src="images/profcom.jpg" alt="profcomff.ru" class="photo_img">
+								</div>
+								<div class="name_project">
+									profcomff.ru
+								</div>
+								<div class="description_project">
+									Сайт студенческого профкома физического факультета.
+								</div>
+							</a>
 						</li>
-						<li class="project">
-							<a href="http://plasten.ru/" target="_blank"><div class="photo_project"><img src="images/plasten.jpg" alt="plasten.ru"></div>
-							<div class="name_project">plasten.ru</div></a>
-							<div class="description_project">Сайт визитка компании Plasten по продаже термопласт-автоматов.</div>
+						<li class="project_item">
+							<a href="http://plasten.ru/" target="_blank" class="project">
+								<div class="photo_project">
+									<img src="images/plasten.jpg" alt="plasten.ru" class="photo_img">
+								</div>
+								<div class="name_project">
+									plasten.ru
+								</div>
+								<div class="description_project">
+									Сайт визитка компании Plasten по продаже термопласт-автоматов.
+								</div>
+							</a>
 						</li>
-						<li class="project">
-							<a href="javascript:PopUpShow()"><div class="add_project icon">
-								<div class="add_project_text">Добавить проект</div>
-							</div></a>
+						<li class="project_item">
+							<a href="javascript:PopUpShow()" class="project">
+								<div class="add_project icon">
+									<div class="add_project_text">
+										Добавить проект
+									</div>
+								</div>
+							</a>
 						</li>
+
 					</ul>
 				</div>
 
@@ -107,6 +138,7 @@
 	
 	<div class="empty clearfix"></div>
 </div>
+
 <div class="b-popup clearfix" id="popup1">
     <div class="b-popup-content">
    	<a href="javascript:PopUpHide()" class="hide_project icon"></a>
@@ -114,10 +146,16 @@
 			<form action="#" method="get" class="form">
 					<label for="input_name_project">Название проекта</label>
 						<input id="input_name_project" type="text" name="name_project" placeholder="Введите название">
-					<label for="img_project">Картинка проекта</label>
-					<div class="img_project icon">
-						<input id="img_project" type="url" name="img_project" placeholder="Загрузите изображение">
-					</div>
+					<label for="upload_img">Картинка проекта</label>
+<!-- 					<div class="img_project icon">
+						<input id="img_project" type="file" name="img_project" placeholder="Загрузите изображение">
+					</div> -->
+					<label class="label_img" for="upload_img">
+						<span class="upload_text_img"  id="fileformlabel">Загрузите изображение</span>
+						<span class="upload_icon_img icon"></span>	
+						<input class="upload_file" id="upload_img" type="file" name="img_project"  onchange="getName(this.value);">
+					</label>	
+
 					<label for="url_project">URL проекта</label>
 						<input id="url_project" type="url" name="url_project" placeholder="Добавьте ссылку">
 					<div class="input_description"><label for="input_description">Описание</label>
@@ -139,6 +177,9 @@
 		</div>
 	</div>
 </footer>
+	<!--[if IE]>
+    <div class="op"></div>
+	<![endif]-->
 <script src="bower_components/jquery/jquery.js"></script>
 <script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
 <script src="js/main.js"></script>

@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=1205">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Обратная связь</title>	
 	<meta name="description" content="Здесь можно отправить мне свой проект">
 	<meta name="keywords" content="Frontend разработчик">
 	<link rel="stylesheet" href="css/stylesheet.css">
-	<link rel="stylesheet" href="css/style.css">	
 	<link rel="stylesheet" href="css/feedback.css">	
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" type="image/x-icon" href="images/icon.ico">
 	<script src="bower_components/modernizr/modernizr.js"></script>
 	 <!--[if IE]>
@@ -31,6 +31,7 @@
 					Leisan Gilfanova начинающий front-end разработчик.
 				</span>
 			</a>
+			<div class="nav_icon icon" id="pull"></div>
 			<ul class="socials clearfix">
 				<li class="socials_item">
 					<a href="https://www.facebook.com/allarepossible" class="icon icon_fb" target="_blank">
@@ -53,18 +54,20 @@
 					</a>
 				</li>
 			</ul>
+
 		</div>
 	</header>
 	<main class="content clearfix">
 		<aside class="sidebar clearfix">
 			<nav class="nav">
+				<div class="nav_list"><div class="tr3"></div></div>
 				<ul>
 					<li class="nav_list"><a href="/index.html" class="navigation">Обо мне</a></li>
 					<li class="nav_list"><a href="/my_work.html" class="navigation">Мои Работы</a></li>
 					<li class="nav_list"><a href="/feedback.html" class="navigation active">Обратная связь</a></li>
 				</ul>
 			</nav>		
-			<div class="contacts clearfix">
+			<div class="contacts">
 				<div class="contacts_title">Контакты</div>
 				<ul class="contacts_list">
 					<li><a href="mailto:lisynok@list.ru" class="gmail_cont icon">lisynok@list.ru</a></li>
@@ -73,28 +76,34 @@
 				</ul>
 			</div>
 		</aside>
-		<div class="content_area clearfix">
-			<section class="information clearfix">
+		<div class="content_area">
+			<section class="information last">
 				<div class="main_line"><h1>У вас интересный проект? Напишите мне</h1></div>
-				<div class="contact_form">
-					<form action="#" method="get" class="form">
-						<div class="inputs left"><label for="input_name">Имя</label>
-							<input id="input_name" type="text" name="name" placeholder="Как к Вам обращаться">
-						</div>
-						<div class="inputs right"><label for="input_email">Email</label>
-							<input id="input_email" type="email" name="email" placeholder="Куда мне писать">
-						</div>
-						<div class="input_message"><label for="input_message">Сообщение</label>
-							<textarea id="input_message" name="message" cols="40" rows="6"   placeholder="Кратко в чем суть" ></textarea>
-						</div>			
-						<label for="input_captcha">Введите код, указанный на картинке</label>
-						<div class="antispam"></div>
-						<div class="captcha"><input id="input_captcha" type="captcha" name="сaptcha" placeholder="Введите код"></div>
-						<div class="buttons">
-							<button type="reset">Очистить</button>
-							<button type="submit">Отправить</button>		
-						</div>
-					</form>
+				<div class="main_information">
+					<div class="contact_form clearfix">
+						<form action="#" method="get" class="form">
+							<div class="form_block">
+								<div class="inputs left"><label for="input_name">Имя</label>
+									<input id="input_name" type="text" name="name" placeholder="Как к Вам обращаться">
+								</div>
+								<div class="inputs right"><label for="input_email">Email</label>
+									<input id="input_email" type="email" name="email" placeholder="Куда мне писать">
+								</div>
+								<div class="input_message"><label for="input_message">Сообщение</label>
+									<textarea id="input_message" name="message" cols="40" rows="6"   placeholder="Кратко в чем суть" ></textarea>
+								</div>			
+								<label for="input_captcha">Введите код, указанный на картинке</label>
+								<div class="antispam"></div>
+								<div class="captcha">
+									<input id="input_captcha" type="captcha" name="сaptcha" placeholder="Введите код">
+								</div>
+								<div class="buttons">
+									<button type="reset">Очистить</button>
+									<button type="submit">Отправить</button>		
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
 			</section>
 		</div>

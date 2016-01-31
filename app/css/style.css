@@ -51,6 +51,7 @@ table {
 }
 
 html, body {
+	max-width: 100%;
 	height: 100%;
 }
 
@@ -76,7 +77,8 @@ header{
 	position: relative;
 }
 .header_container{
-	width: 1204px;	
+	width: 90%;	
+	max-width: 1204px;	
 	margin: 0 auto;
 }
 .header{
@@ -178,12 +180,14 @@ header{
     background-position: -182px -151px;
 }
 .content{
-	width: 960px;
+	width: 95%;
+	max-width: 960px;
 	margin: 0 auto;
 }
 .sidebar {
 	float: left;
 	width: 250px;
+	max-width: 27%;
 }
 .nav{
 	margin-bottom: 35px;
@@ -212,12 +216,12 @@ header{
 			box-shadow: 0 2px 1px 0 rgba(9, 9, 9, 0.07),inset 0 -2px 3px 0 rgba(41, 41, 41, 0.05);
 }
 
-.nav_list:last-child a{
+.nav_list:last-child .navigation{
 	-webkit-border-radius: 0 0 4px 4px;
 	   -moz-border-radius: 0 0 4px 4px;
 	        border-radius: 0 0 4px 4px;
 }
-.nav_list:first-child a{
+.nav_list:first-child .navigation{
 	border-top: 1px solid #c5c5c5;
 	-webkit-border-radius: 4px 4px 0 0;
 	   -moz-border-radius: 4px 4px 0 0;
@@ -276,7 +280,7 @@ header{
 	color: rgb(208, 152, 44);
 	font-family: "OpenSansSemiBold";
 	font-size: 20px;
-	padding: 10px 26px 12px 26px;
+	padding: 10px 26px 10px 26px;
 	text-align: left;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
@@ -363,22 +367,25 @@ header{
 	   -moz-box-shadow: inset 0 2px 2px 0 rgba(114, 112, 112, 0.1);
 			box-shadow: inset 0 2px 2px 0 rgba(114, 112, 112, 0.1);
 }
-
+.tr3{
+	display: none;
+}
 .content_area{
 	float: right;
 	width: 651px;
+	max-width: 67.9%;
 }
 .information{
 	display: block;
 	margin-bottom: 35px;
 	background-color: #f5f4f3;
-	-webkit-box-shadow: 0 4px 10px 0 rgba(0,0,0,.08), inset 0 1px 6px rgba(255,255,255,.25);
-	   -moz-box-shadow: 0 4px 10px 0 rgba(0,0,0,.08), inset 0 1px 6px rgba(255,255,255,.25);
-			box-shadow: 0 4px 10px 0 rgba(0,0,0,.08), inset 0 1px 6px rgba(255,255,255,.25);
+	-webkit-box-shadow: 0 4px 10px 0 rgba(0,0,0,.08), inset 0 1px 6px rgba(255,255,255,.45);
+	   -moz-box-shadow: 0 4px 10px 0 rgba(0,0,0,.08), inset 0 1px 6px rgba(255,255,255,.45);
+			box-shadow: 0 4px 10px 0 rgba(0,0,0,.08), inset 0 1px 6px rgba(255,255,255,.45);
 	border: solid 1px #c3c2c2;
-	background-image:  -ms-linear-gradient(bottom, rgba(0,0,0,.09), rgba(255,255,255,.5));	
-	background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.09), rgba(255,255,255,.5));
-	background-image: linear-gradient(to top, rgba(0,0,0,.09), rgba(255,255,255,.5));
+	background-image: -moz-linear-gradient(90deg, rgba(0,0,0,.09) 0%, rgba(255,255,255,.5) 100%);	
+	background-image: -webkit-linear-gradient(90deg, rgba(0,0,0,.09) 0%, rgba(255,255,255,.5) 100%);	
+	background-image: -ms-linear-gradient(90deg, rgba(0,0,0,.09) 0%, rgba(255,255,255,.5) 100%);	
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0eeed',GradientType=0 )";
 	-webkit-border-radius: 5px;
 	   -moz-border-radius:  5px;
@@ -404,11 +411,9 @@ header{
 	   -moz-border-radius: 5px 5px 0 0;
 			border-radius: 5px 5px 0 0;
 }
-.pad{
-	padding: 15px 41px 17px 41px;	
-}
+
 .main_information {
-	padding: 39px 40px 34px 42px;
+	padding: 6% 6% 5% 6.5%;
 }
 .photo{
 	display: inline-block;
@@ -438,9 +443,9 @@ header{
 			border-radius: 50%;		
 }
 .info{
-	margin-top: -9px;
+	margin-top: -6px;
 	width: 377px;
-	line-height: 1.77;
+	line-height: 1.8;
 	display: inline-block;
 	vertical-align: top;
 	text-align: left;
@@ -455,7 +460,8 @@ header{
 .info_more{
 	vertical-align: top;
 	display: inline-block;
-	width: 200px;
+	width: 215px;
+	max-width: 56%;
 	margin-left: 3px;
 }
 
@@ -505,7 +511,8 @@ header{
     background-position: -122px -148px;
 }
 .education {
-	padding: 19px 40px 21px 42px;
+	margin-top: -20px;
+	margin-bottom: -14px;
 }
 .org:last-child {
 	-webkit-box-shadow:none;
@@ -516,7 +523,7 @@ header{
 .org{
 	position: relative;
 	color: rgb(114, 112, 112);
-	padding: 25px 0 24px 0;
+	padding: 27px 0 24px 0;
 	line-height: 1.4;
 	text-align: left;
 	border-bottom: 1px solid #dbdbda;
@@ -624,6 +631,7 @@ header{
 }
 .footer_container{
 	width: 960px;
+	max-width: 90%;	
 	margin: 20px auto;
 	font-size: 12px;
 	line-height: 1.9;		
@@ -639,7 +647,6 @@ header{
 }
 
 .enter {
-
 	text-decoration: none;
     margin-left: 167px;
 	display: inline-block;
@@ -665,4 +672,280 @@ header{
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
 }
 /***********   end Footer  **************/
+
+/*     Adaptiv    */
+@media (min-width: 926px) and (max-width: 1025px){
+.content_area{
+	max-width: 72%;
+}
+.info{
+	font-size: 13px;
+	max-width: 63%;
+	margin-left: 5.4%;
+}
+.skills{
+	margin-right: -50px;
+}
+}
+
+@media (min-width: 769px) and (max-width: 925px){
+.sidebar {
+	float: left;
+	max-width: 23%;
+}	
+.content_area{
+	float: right;
+	max-width: 72%;
+}
+.contacts a{
+	padding: 6px 1px 8px 52px;
+	font-size: 12px;
+}
+.contacts a:after{
+	left: 35px;
+}
+.gmail_cont:before{
+	left: 11px;
+}
+.tel_cont:before{
+	left: 11px;		
+}
+.skype_cont:before{
+	left: 11px;
+}
+.navigation{
+	font-size: 17px;
+	padding: 15px 12px 15px 12px;
+}
+.info{
+	font-size: 13px;
+	max-width: 61%;
+	margin-left: 4%;
+}
+.info_more{
+	margin-right: -20px;
+}
+.skills{
+	max-width: 54%;
+}
+.footer_container{
+	max-width: 90%;
+}
+.footer_text{
+	margin-left: 20%;
+}
+
+.enter {
+    margin-left: 15%;
+}
+.captcha{
+	max-width: 46%;
+}
+.antispam{
+	max-width: 150px;
+}
+.antispam:before{
+	max-width: 150px;
+}
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px){
+header{
+	height: 67px;
+	border-bottom: 4px solid #fff;
+}
+.header_container{
+	width: 95%;	
+}
+.skills{
+	max-width: 70%;
+	margin-right: -10%;
+	margin-bottom: -4px;
+}
+.information{
+	margin-bottom: 3.6%;
+}
+.main_information{
+	padding-bottom: 4%;
+}
+.photo{
+	margin-top: -6px;
+
+}
+.info{
+	max-width: 66%;
+	margin-top: -15px;
+}
+.info_more{
+	max-width: 70%;
+}
+.header{
+	margin-bottom: 2.8%;
+}
+.logo_img img{
+	max-width: 65px;
+	max-height: auto;
+}
+
+.socials{
+	margin-top: 16px;
+	float: right;
+}
+.socials_item{
+	margin-left: 11px;
+	width: 37px;
+	height: 37px;
+}
+.nav_icon{
+	position: relative;
+	background-image: url('../images/menu.png');
+	width: 25px;
+	height: 21px;
+	margin: 24px 11px 0 30px;
+	display: block;
+	float: right;
+	cursor: pointer;
+	z-index: 2;	
+}
+.content_area{
+	float: none;
+	margin: 0 auto;
+	width: 642px;
+	max-width: 90%;
+}
+.main_line{
+	padding: 6px 41px 10px 41px;
+	font-style: 23px;
+}
+.education {
+	margin-top: -31px;
+}
+.footer_text{
+	margin-left: 18.7%;
+}
+
+.enter {
+    margin-left: 2%;
+}
+
+.contact_form {
+	padding: 2.5% 2% 0 0;
+}
+.footer_container{
+	max-width: 95%;	
+	margin: 6px auto;
+}
+.empty{
+	height: 40px;
+}
+.footer{
+	height: 39px;
+	margin-top: -39px;
+}
+.enter_text{
+	margin-left: 28px;
+	font-size: 12px;
+}
+.nav_list{
+	display: none;
+}
+.nav{
+	position: absolute;
+	top: 64px;
+	right: 5px;
+	-webkit-box-shadow: 3px 3px 3px 0 rgba(17, 17, 17, 0.07),inset 0 -2px 3px 0 rgba(45, 45, 45, 0.05);
+	   -moz-box-shadow: 3px 3px 3px 0 rgba(17, 17, 17, 0.07),inset 0 -2px 3px 0 rgba(45, 45, 45, 0.05);
+			box-shadow: 3px 3px 3px 0 rgba(17, 17, 17, 0.07),inset 0 -2px 3px 0 rgba(45, 45, 45, 0.05);
+	z-index: 2;
+}
+
+.navigation{
+	width: 165px;
+	position: relative;
+	display: block;
+	font-family: "OpenSansSemiBold";
+	text-decoration: none;
+	padding: 13px 15px 13px 15px;
+	font-size: 16px;
+}
+.tr3{
+	display: block;
+}
+.tr3:after {
+    content: ''; 
+    position: absolute; 
+    right: 24px; 
+    top: -29px; 
+    border: 12px solid transparent; 
+    border-bottom: 20px solid #e3e3e4; 
+}
+
+.contacts{
+	position: relative;
+	width: 648px;
+	max-width: 87%;
+	position: absolute;
+	bottom: 78px;
+	left: 7.3%;
+	margin-bottom: 0;
+}
+.contacts_title{
+	display: none;
+}
+.contacts li{
+	position: relative;
+	display: inline-block;
+	height: 37px;
+	width: 33%;
+	max-width: 214px;
+	margin-left: -6px;
+	border-left: 1px solid #d7d6d5;
+}
+.last{
+	margin-bottom: 119px;
+}
+
+.contacts a{
+	position: relative;
+	padding: 6px 14px 8px 78px;	
+}
+.contacts li:first-child{
+	border-right: 1px solid #d7d6d5;
+	margin-left: 0;
+}
+.contacts li:last-child{
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
+	border-right: 1px solid #d7d6d5;
+	margin-left: -5px;
+}
+.captcha{
+	width: 191px;
+	max-width: 52%;
+}
+
+}
+/*     Adaptiv    */
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+
+}
+/*     Adaptiv    */
 

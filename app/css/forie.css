@@ -1,3 +1,6 @@
+.wrapper{
+	background: url(../images/bg.jpg) repeat-x;
+}
 .org{
 	padding: none;
 	border-top: 1px solid #dbdbda;
@@ -79,4 +82,26 @@
 .photo_project img:hover{
     filter: alpha(Opacity=65);
     opacity: 0.65;
+}
+.op{
+	display: none;
+	width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";    
+    background: rgb(0,0,0);
+}
+.b-popup .b-popup-content{
+	top: 20%;
+	left: 40%;
+}
+
+.lk{
+	top: 30%;
+	left: 40%;
+}
+.add_project_form input[type="file"]{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
