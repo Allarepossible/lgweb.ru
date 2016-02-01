@@ -238,41 +238,6 @@
 	text-align: left;
 	padding-top: 2px;
 }
-/*.add_project_form input[type="file"]{ 
-
-}
-.img_project{
-	position: relative;
-	background-image: none;
-}
-.img_project:after{
-	content: " ";
-	right: 13px;
-	position: absolute;
-	top: 12px;
-    width: 25px;
-    height: 18px;
-    background-position: -135px -90px;
-}
-.img_project:before{
-	background-image: -moz-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-	background-image: -webkit-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-	-webkit-box-shadow: 0 2px 1px 0 rgba(9, 9, 9, 0.07),inset 0 -2px 3px 0 rgba(41, 41, 41, 0.05);
-	   -moz-box-shadow: 0 2px 1px 0 rgba(9, 9, 9, 0.07),inset 0 -2px 3px 0 rgba(41, 41, 41, 0.05);
-			box-shadow: 0 2px 1px 0 rgba(9, 9, 9, 0.07),inset 0 -2px 3px 0 rgba(41, 41, 41, 0.05);
-	border: 1px solid #c5c5c5;
-	-webkit-border-radius: 0 4px 4px 0;
-	   -moz-border-radius: 0 4px 4px 0;
-	        border-radius: 0 4px 4px 0;
-	position: absolute;
-	right: 0;
-	top: 0;
-	content: " ";
-	height: 39px;
-	width: 50px;
-}
-*/
 .label_img {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -464,15 +429,143 @@ textarea{
 }
 
 }
-
+/*     Adaptiv    */
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 600px) {
+.project_item{
+	margin-left: 7%;
+}
+}
 /*     Adaptiv    */
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	
+.project_list{
+	margin-left: 0;
+	margin-top: 0;
+}
+.project_item{
+	margin-left: 10%;
+}
+.project {
+	width: 280px;
+	-webkit-border-radius: 9px;
+		border-radius: 9px;
+}    
+.photo_project {
+    height: 204px;
+}
+.photo_project:before {
+	height: 204px;
+	width: 280px;
+}
+
+.add_project{
+	height: 222px;
+	width: 280px;
+
+}
+.add_project_text{
+	font-size: 20px;
+	top: 68.5%;
+	left: 61px;	
+}
+.add_project:before{
+	width: 90px;
+	height: 92px;
+	margin-left: 4px;
+	background-image: none;
+}
+.name_project{
+	font-size: 17px;
+	line-height: 1.4;
+}
+.description_project{
+	padding: 6px;
+	font-size: 16px;
+	line-height: 18px;
+}
+.add_project:after{
+	background-image: url(../images/polaroid.png);
+	display: block;
+	top: 41%;
+	left: 52%;
+    width: 34px;
+    height: 34px;
+    background-position: 0 0;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 380px) {
+.project_item{
+	margin-left: 3%;
+}
+.project {
+	width: 260px;
+	-webkit-border-radius: 9px;
+		border-radius: 9px;
+}    
+.photo_project {
+    height: 187px;
+}
+.photo_project:before {
+	height: 187px;
+	width: 260px;
+}
+
+.add_project{
+	height: 202px;
+	width: 260px;
+
+}
+.add_project_text{
+	top: 69.5%;
+	left: 45px;	
+}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+.project_item{
+	margin-left: 3%;
+}
+.project {
+	width: 230px;
+	-webkit-border-radius: 9px;
+		border-radius: 9px;
+}    
+.photo_project {
+    height: 165px;
+}
+.photo_project:before {
+	height: 165px;
+	width: 230px;
+}
 
+.add_project{
+	height: 182px;
+	width: 230px;
+
+}
+.add_project_text{
+	font-size: 18px;
+	left: 35px;	
+}
+
+.add_project:before{
+	width: 70px;
+	height: 72px;
+}
+
+.name_project{
+	font-size: 14px;
+	line-height: 1.2;
+}
+
+.description_project{
+	padding: 6px;
+	font-size: 14px;
+	line-height: 16px;
+}
 
 }
