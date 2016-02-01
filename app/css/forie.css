@@ -133,3 +133,12 @@
 	    background-repeat: no-repeat;
 		background-position: 0 bottom;
 }
+.checkbox_input {
+	margin-bottom: 50px;
+	margin-top: -6px;
+}
+.lk .buttons{
+	position: relative;
+	margin-left: -6px;
+	margin-bottom: -40px;
+}

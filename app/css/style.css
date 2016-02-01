@@ -1578,7 +1578,7 @@ header{
 .contacts a:after{
 	left: 18%;
     height: 42px;
-	background-position: 0 -3px;
+	background-position: -3px -796px;
 }
 .gmail_cont:before{
 	top: 25%;
