@@ -19,6 +19,9 @@
 	margin-bottom: 5px;
 	
 }
+.form_auth{
+	background-image: none;
+}
 .auth{
 	padding: 40px 38px 40px 38px;
 	box-sizing: border-box;
@@ -56,7 +59,7 @@
 	background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e9e7e7', GradientType=0 )";
+	/*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e9e7e7', GradientType=0 )";*/
 	-webkit-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.35),inset 0 2px 2px 0 rgba(114, 112, 112, 0.1);
 	   -moz-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.35),inset 0 2px 2px 0 rgba(114, 112, 112, 0.1);
 			box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.35),inset 0 2px 2px 0 rgba(114, 112, 112, 0.1);
@@ -73,7 +76,7 @@
 	top: 0;
     width: 11px;
     height: 40px;
-    background-position: -29px -5px;
+    background-position: -20px -792px;
 }
 
 .im_mail:before{
@@ -83,7 +86,7 @@
 	left: 13px;
     width: 23px;
     height: 17px;
-    background-position: -5px -56px;
+    background-position: -30px -726px;
     z-index: 2;
 }
 
@@ -94,7 +97,7 @@
 	left: 14px;
     width: 22px;
     height: 20px;
-    background-position: -135px -118px;
+    background-position: -33px -619px;
     z-index: 2;
 }
 
@@ -109,6 +112,7 @@
 	transform: translateX(-50%);
 }
 button[type="submit"]{
+	cursor: pointer;
 	position: relative;
 	font-size: 14px;
 	font-family: "OpenSansSemiBold";

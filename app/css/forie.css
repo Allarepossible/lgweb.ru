@@ -1,5 +1,5 @@
 .wrapper{
-	background: url(../images/bg.jpg) repeat-x;
+	background-repeat: repeat-x;
 }
 .org{
 	padding: none;
@@ -13,11 +13,14 @@
 	position: absolute;
 	top: 32%;
 	left: 1px;
-	background-image: url(../images/spritesheet.png);
+	background-image: url(../images/icon.png);
     background-repeat: no-repeat;
     width: 54px;
     height: 55px;
-    background-position: -70px -5px;
+    background-position: -3px -90px;
+}
+.footer_text{
+	margin-top: -13px;
 }
 .work{
 	margin-top: 5px;
@@ -49,11 +52,11 @@
 
 
 .socials_item{
-	background-image: url(../images/spritesheet.png);
+	background-image: url(../images/icon.png);
     background-repeat: no-repeat;
     width: 42px;
     height: 44px;
-    background-position: -182px -5px;
+    background-position: -3px -220px;
 }
 
 .icon_fb {
@@ -102,6 +105,31 @@
 	top: 30%;
 	left: 40%;
 }
+.form_auth input[type="text"]{ 
+	position: relative;
+	background-color: #fff;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)";
+	padding-top: 14px;
+}
+.form_auth .buttons{
+	position: absolute;
+	bottom: 39px;
+	left: 25%;
+}
 .add_project_form input[type="file"]{
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.im_mail_icon{
+	position: relative;
+		background-image: url(../images/email.png);
+	background-position: 0 top;
+    background-repeat: no-repeat;		
+}
+
+.im_pass_icon{
+	position: relative;
+		background-image: url(../images/email.png);
+	    background-repeat: no-repeat;
+		background-position: 0 bottom;
 }
