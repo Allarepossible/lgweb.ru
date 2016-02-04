@@ -83,23 +83,31 @@
 					<div class="contact_form clearfix">
 						<form action="#" method="get" class="form">
 							<div class="form_block">
-								<div class="inputs left"><label for="input_name">Имя</label>
-									<input id="input_name" type="text" name="name" placeholder="Как к Вам обращаться">
+								<div class="input_group">
+									<div class="inputs left"><label for="input_name">Имя</label>
+										<input id="input_name" type="text" name="name" placeholder="Как к Вам обращаться" class="for_input">
+									</div>
 								</div>
-								<div class="inputs right"><label for="input_email">Email</label>
-									<input id="input_email" type="email" name="email" placeholder="Куда мне писать">
+								<div class="input_group">
+									<div class="inputs right"><label for="input_email">Email</label>
+										<input id="input_email" type="email" name="email" placeholder="Куда мне писать" class="for_input">
+									</div>
 								</div>
-								<div class="input_message"><label for="input_message">Сообщение</label>
-									<textarea id="input_message" name="message" cols="40" rows="6"   placeholder="Кратко в чем суть" ></textarea>
-								</div>			
+								<div class="input_group">
+									<div class="input_message"><label for="input_message">Сообщение</label>
+										<textarea id="input_message" name="message" cols="40" rows="6"   placeholder="Кратко в чем суть" class="for_input"></textarea>
+									</div>	
+								</div>				
 								<label for="input_captcha">Введите код, указанный на картинке</label>
 								<div class="antispam"></div>
-								<div class="captcha">
-									<input id="input_captcha" type="captcha" name="сaptcha" placeholder="Введите код">
+								<div class="input_group">
+									<div class="captcha">
+										<input id="input_captcha" type="captcha" name="сaptcha" placeholder="Введите код"  class="for_input">
+									</div>
 								</div>
 								<div class="buttons">
-									<button type="reset">Очистить</button>
-									<button type="submit">Отправить</button>		
+									<button type="reset" id="feedback-reset">Очистить</button>
+									<button type="submit" id="feedback-submit">Отправить</button>		
 								</div>
 							</div>
 						</form>
@@ -107,27 +115,7 @@
 				</div>
 			</section>
 		</div>
-	</main>
-	<div class="soc2">			
-		<ul class="socials2 clearfix">
-			<li class="socials_item2">
-				<a href="https://www.facebook.com/allarepossible" class="icon icon_mob_fb" target="_blank">
-				</a>
-			</li>			
-			<li class="socials_item2">
-				<a href="http://vk.com/id121191631" class="icon icon_mob_vk" target="_blank">
-				</a>
-			</li>
-			<li class="socials_item2">
-				<a href="#" class="icon icon_mob_tw" target="_blank">
-				</a>
-			</li>
-			<li class="socials_item2">
-				<a href="https://github.com/Allarepossible" class="icon icon_mob_git" target="_blank">
-				</a>
-			</li>
-		</ul>
-	</div>	
+	</main>	
 	<div class="empty"></div>
 </div>
 <footer class="footer clearfix">

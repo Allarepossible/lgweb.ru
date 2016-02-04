@@ -189,7 +189,7 @@ header{
 	width: 250px;
 	max-width: 27%;
 }
-.soc2{
+.socials2{
 	display: none;
 }
 .nav{
@@ -917,7 +917,7 @@ header{
 	border-left: 1px solid #d7d6d5;
 }
 .last{
-	margin-bottom: 119px;
+	margin-bottom: 89px;
 }
 
 .contacts a{
@@ -1243,7 +1243,7 @@ header{
     border-bottom: 25px solid #e3e3e4; 
 }
 .last{
-	margin-bottom: 177px;
+	margin-bottom: 165px;
 }
 .contacts{
 	position: relative;
@@ -1311,15 +1311,12 @@ header{
 }
 
 .socials2{
-	position: relative;
-	padding: 0 9% 0 9%;	
-}
-.soc2{
 	display: block;
-	height: 82px;
-
+	position: relative;
+	padding: 0 9% 2% 9%;	
 }
-.socials_item2{
+
+.socials_item{
 	cursor: pointer;
 	position: relative;
 	display: inline-block;
@@ -1335,7 +1332,7 @@ header{
 	box-shadow: 0 2px 1px 0 rgba(9, 9, 9, 0.31),inset 0 -2px 3px 0 rgba(41, 41, 41, 0.05);
 }
 
-.icon_mob_fb {
+.icon_fb {
 	position: absolute;
 	top: 23%;
 	left: 36%;
@@ -1344,10 +1341,10 @@ header{
     height: 40px;
     background-position: -35px -458px;
 }
-.icon_mob_fb:hover {
+.icon_fb:hover {
     background-position: -35px -415px;
 }
-.icon_mob_git {
+.icon_git {
 	position: absolute;
 	top: 23%;
 	left: 13%;
@@ -1357,10 +1354,10 @@ header{
     background-position: -3px -45px;
 }
 
-.icon_mob_git:hover {
+.icon_git:hover {
     background-position: -3px 0;
 }
-.icon_mob_tw {
+.icon_tw {
 	position: absolute;
 	top: 23%;
 	left: 18%;
@@ -1369,10 +1366,10 @@ header{
     height: 33px;
     background-position: -3px -184px;
 }
-.icon_mob_tw:hover {
+.icon_tw:hover {
     background-position: -3px -148px;
 }
-.icon_mob_vk {
+.icon_vk {
 	position: absolute;
 	top: 26%;
 	left: 31%;
@@ -1382,7 +1379,7 @@ header{
     background-position: -3px -505px;
 }
 
-.icon_mob_vk:hover {
+.icon_vk:hover {
     background-position: -3px -467px;
 }
 }
@@ -1391,7 +1388,7 @@ header{
 	margin-left: 5%;
 }
 
-.socials_item2{
+.socials_item{
 	margin-left: 7%;
 }
 }
@@ -1399,22 +1396,24 @@ header{
 .contacts{
 	margin-left: 2.5%;
 }
-
-.socials_item2{
-	margin-left: 6%;
+.socials_item{
+	margin-left: 6.5%;
 }
+
 }
 @media only screen and (max-width : 480px) {
 .contacts{
 	margin-left: 1.5%;
 }
-
-.socials_item2{
-	margin-left: 23px;
+.socials2{
+	display: block;
+	position: relative;
+	padding: 0 6% 2% 6%;	
 }
+
 }
 /* Custom, Retina */
-@media only screen and (max-width : 380px) {
+@media only screen and (max-width : 450px) {
 .information{
 	max-width: 100%;
 	margin-left: 0;
@@ -1443,9 +1442,10 @@ header{
 }
 
 .last{
-	margin-bottom: 177px;
+	margin-bottom: 147px;
 }
 .contacts{
+	margin-left: 0;	
 	max-width: 84%;
 }
 
@@ -1474,38 +1474,55 @@ header{
 	font-size: 22px;
 }
 
-
 .socials2{
-	position: relative;
-	padding: 0 3% 0 3%;	
+	padding: 0 6% 3% 6%;	
 }
 
-.socials_item2{
-	width: 57px;
-	height: 57px;
-	margin-left: 22px;
+.socials_item{
+	width: 62px;
+	height: 62px;
+	margin-left: 7%;
 }
-.icon_mob_fb {
+.icon_fb {
 	top: 20%;
 	left: 36%;
 }
-.icon_mob_git {
+.icon_git {
 	top: 20%;
-	left: 4%;
+	left: 8%;
 }
-.icon_mob_tw {
+.icon_tw {
 	top: 20%;
 	left: 16%;
 }
-.icon_mob_vk {
+.icon_vk {
 	top: 23%;
 	left: 28%;
 }
 
 
 }
+@media only screen and (max-width : 430px) {
+.socials2{
+	padding: 0 6% 3% 6%;	
+}
+.socials_item{
+	margin-left: 5%;
+}
 
-@media only screen and (max-width : 320px) {
+
+}
+
+@media only screen and (max-width : 400px) {
+.socials_item{
+	width: 57px;
+	height: 57px;
+	margin-left: 5%;
+}
+}
+
+
+@media only screen and (max-width : 360px) {
 .photo{
 	margin-left: 17%;
 }
@@ -1597,28 +1614,36 @@ header{
 	font-size: 18px;
 }
 
-.socials_item2{
+.socials_item{
 	width: 53px;
 	height: 53px;
 	margin-left: 14px;
 }
-.icon_mob_fb {
+.icon_fb {
 	top: 15%;
 	left: 32%;
 }
-.icon_mob_git {
+.icon_git {
 	top: 13%;
 	left: 0;
 }
-.icon_mob_tw {
+.icon_tw {
 	top: 20%;
 	left: 11%;
 }
-.icon_mob_vk {
+.icon_vk {
 	top: 17%;
 	left: 25%;
 }
+}
 
+@media only screen and (max-width : 340px) {
+.socials2{
+	padding: 0 5% 3% 4%;	
+}
+.socials_item{
+	margin-left: 4%;
+}
 
 }
 /*     Adaptiv    */
