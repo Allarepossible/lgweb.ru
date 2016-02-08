@@ -96,9 +96,11 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";    
     background: rgb(0,0,0);
 }
+
 .b-popup .b-popup-content{
 	top: 20%;
 	left: 40%;
+	font-style: 
 }
 
 .lk{

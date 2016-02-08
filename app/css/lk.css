@@ -65,11 +65,14 @@
 			box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.35),inset 0 2px 2px 0 rgba(114, 112, 112, 0.1);
 	margin-bottom: 25px;
 }
-.inputs{
+.form_auth .inputs{
 	position: relative;
 	background-image: none;
 }
-.inputs:after{
+.form_auth .error:before, .form_auth .error:after{
+	display: none;
+}
+.form_auth .inputs:after{
 	content: " ";
 	left: 43px;
 	position: absolute;
@@ -101,11 +104,11 @@
     z-index: 2;
 }
 
-.buttons{
+.form_auth .buttons{
 	position: relative;
 	margin-left: 54px;
 }
-button[type="submit"]{
+.form_auth button[type="submit"]{
 	cursor: pointer;
 	position: relative;
 	font-size: 14px;
@@ -129,7 +132,7 @@ button[type="submit"]{
 			box-shadow: 0 2px 1px 0 rgba(9, 9, 9, 0.16);
 
 }
-button[type="submit"]:hover{
+.form_auth button[type="submit"]:hover{
 	background-image: -moz-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
@@ -236,7 +239,7 @@ button[type="submit"]:hover{
 	margin-bottom: 29px;
 }
 
-.inputs:after{
+.form_auth .inputs:after{
 	left: 52px;
 	background-position: -39px -770px; 
 	width: 14px; 
@@ -259,11 +262,11 @@ button[type="submit"]:hover{
 	height: 23px;
 }
 
-.buttons{
+.form_auth .buttons{
 	position: relative;
 	margin-left: 22%;
 }
-button[type="submit"]{
+.form_auth button[type="submit"]{
 	font-size: 16px;
 	width: 183px;
 	padding-top: 11px;
@@ -306,11 +309,11 @@ button[type="submit"]{
 	width: 90%;
 }
 
-.buttons{
+.form_auth .buttons{
 	position: relative;
 	margin-left: 18%;
 }
-button[type="submit"]{
+.form_auth button[type="submit"]{
 	font-size: 16px;
 	width: 163px;
 	padding-top: 11px;

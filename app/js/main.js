@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('input, textarea').placeholder();
-    $('.b-popup').click(PopUpHide);
-    $('.b-popup-content').click(function(event){
+    $('.popup').click(PopUpHide);
+    $('.popup_content').click(function(event){
    event.stopPropagation()});
         $('.socials').clone().appendTo('.wrapper').addClass('socials2').removeClass('socials');
         $('.empty').clone().appendTo('.wrapper');
@@ -10,19 +10,34 @@ $(document).ready(function() {
 
 //Функция отображения PopUp
 function PopUpShow(){
-    $('#popup1').fadeTo(500, 1);   
+    $('#popup').fadeTo(500, 1); 
+    $('.add_project_form').show();     
     $('.op').show();
-}
+};
 //Функция скрытия PopUp
 function PopUpHide(){
-    $('#popup1').fadeOut();
+    $('#popup').fadeOut();
     $('.op').hide();
     app.removeErrorAll();
     $('input, textarea').val('');
     $('#fileformlabel').empty();
+    $('.popup_succes').hide();   
+    $('.popup_error').hide();   
     document.getElementById('fileformlabel').innerHTML = "Загрузите изображение";
-}
-
+};
+function PopSuccesShow(){
+    PopUpShow();
+    PopErHide();
+    $('.add_project_form').hide();
+    $('.popup_succes').fadeTo(500, 1);
+};
+function PopErShow(){
+    PopUpShow();
+    $('.popup_error').fadeTo(500, 1);
+};
+function PopErHide(){
+    $('.popup_error').fadeOut();
+};
 
 $(function() {
     var pull        = $('#pull');
@@ -40,9 +55,6 @@ $(function() {
             menu.removeAttr('style');
         }
     });
-
-
-
 });
 
 
@@ -56,7 +68,7 @@ function getName (str){
     var filename = str.slice(i);            
     var uploaded = document.getElementById('fileformlabel');
     uploaded.innerHTML = filename;
-}
+};
 
      var app = {
 
@@ -75,8 +87,6 @@ function getName (str){
 
             var form = $('form');
             if (app.validateForm(form) === false) return false;
-            console.log('submitt!!')
-
         },
 
         validateForm: function(form) {
@@ -88,17 +98,15 @@ function getName (str){
             $.each(inputs, function(index, val) {
                  var input = $(val),
                      val = input.val(),
-                     child = input.parents('.input_group').children('div').children('.for_input');
                      childImg = input.parents('.input_group').children('.label_img');
 
                 if(val.length === 0){
-                    child.addClass('has_error').removeClass('has_succes');
+                    input.addClass('has_error').removeClass('has_succes');
                     childImg.addClass('has_error').removeClass('has_succes');                    
-                    child.parent('div').prepend('<div class="error">');
-                    childImg.prepend('<div class="error">');
+                    input.before('<div class="error">');
                     valid = false;
                 } else {
-                    child.addClass('has_succes').removeClass('has_error');
+                    input.addClass('has_succes').removeClass('has_error');
                     childImg.addClass('has_succes').removeClass('has_error');
                 }
             });

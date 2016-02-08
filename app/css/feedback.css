@@ -8,7 +8,7 @@
   margin-bottom: 100px;
 }
 
-.inputs{
+.contact_form .inputs{
 	display: block;
 	width: 48%;
 	margin-bottom: 15px;
@@ -132,15 +132,16 @@
 	content: "";
 	z-index: 2;
 }
+
 .inputs.left .error:before{
+	top: 9px;
 	left: -103px;
-	top: 30px;
 	content: "введите имя";
 }
 .inputs.left .error:after{
 	position: absolute;
-	right: 103%;
-	top: 37px;
+	left: -13px;
+	top: 16px;
 	content: "";
 	border: 7px solid transparent;
 	border-left-color: rgb(211,118,84);  
@@ -149,13 +150,13 @@
 
 .inputs.right .error:before{
 	right: -110px;
-	top: 30px;
+	top: 9px;
 	content: "введите email";
 }
 .inputs.right .error:after{
 	position: absolute;
 	right: -6%;
-	top: 36px;
+	top: 16px;
 	content: "";
 	border: 7px solid transparent;
 	border-right-color: rgb(211,118,84);  
@@ -163,13 +164,13 @@
 }
 .input_message .error:before{
 	left: -98px;
-	top: 182px;
+	top: 72px;
 	content: "ваш вопрос";
 }
 .input_message .error:after{
 	position: absolute;
 	left: -13px;
-	top: 188px;
+	top: 78px;
 	content: "";
 	border: 7px solid transparent;
 	border-left-color: rgb(211,118,84);  
@@ -177,13 +178,13 @@
 }
 .captcha .error:before{
 	right: -87px;
-	top: 2px;
+	top: 3px;
 	content: "код капчи";
 }
 .captcha .error:after{
 	position: absolute;
 	right: -6%;
-	top: 7px;
+	top: 8px;
 	content: "";
 	border: 7px solid transparent;
 	border-right-color: rgb(211,118,84);  
@@ -237,7 +238,7 @@ input[type="captcha"]{
 .no-cssgradients input[type="captcha"]{
 	padding-top: 9px;
 }
-.buttons{
+.contact_form .buttons{
 	display: inline-block;
 	width: 100%;
 }
@@ -254,7 +255,7 @@ input[type="captcha"]{
 	-webkit-border-radius: 5px;
 			border-radius: 5px;
 }
-button[type="submit"]{
+.contact_form button[type="submit"]{
 	color: rgb(30, 116, 101);
 	border: 1px solid #3fa78a;
 	border-top: 1px solid #6adbbc;
@@ -268,7 +269,7 @@ button[type="submit"]{
 	float: left;
 	cursor: pointer;		
 }
-button[type="submit"]:hover{
+.contact_form button[type="submit"]:hover{
 	background-image: -moz-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
@@ -335,7 +336,7 @@ textarea{
 	position: relative;
   	margin-bottom: 100px;
 }
-.inputs{
+.contact_form .inputs{
 	width: 100%;
 	margin-bottom: 10px;
 }
