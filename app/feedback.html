@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="Ru-ru">
 <head>
@@ -21,7 +22,7 @@
 	<link rel="stylesheet" href="css/portfolio.css">
 	<link rel="stylesheet" href="css/lk.css">
 	<!-- endbuild -->
-	
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<!-- build:js js/modernizr.min.js -->	
 	<script src="bower_components/modernizr/modernizr.js"></script>
 	<!-- endbuild -->
@@ -94,7 +95,7 @@
 				<div class="main_line"><h1>У вас интересный проект? Напишите мне</h1></div>
 				<div class="main_information">
 					<div class="contact_form clearfix">
-						<form action="#" method="get" class="form">
+						<form action="php/upload.php" method="post" enctype="multipart/form-data" class="form">
 							<div class="form_block">
 								<div class="input_group">
 									<div class="inputs left"><label for="input_name">Имя</label>
@@ -111,13 +112,7 @@
 										<textarea id="input_message" name="message" cols="40" rows="6"   placeholder="Кратко в чем суть" class="for_input"></textarea>
 									</div>	
 								</div>				
-								<label for="input_captcha">Введите код, указанный на картинке</label>
-								<div class="antispam"></div>
-								<div class="input_group">
-									<div class="captcha">
-										<input id="input_captcha" type="captcha" name="сaptcha" placeholder="Введите код"  class="for_input">
-									</div>
-								</div>
+								<div class="g-recaptcha" data-sitekey="6LfCzhcTAAAAAKyRgaqEOGaJSqnG_E2i8MAaGnmq"></div>	
 								<div class="buttons">
 									<button type="reset" id="feedback-reset">Очистить</button>
 									<button type="submit" id="feedback-submit">Отправить</button>		
@@ -150,6 +145,9 @@
 	<!-- endbuild -->
 	<!-- build:js js/main.min.js -->
 	<script src="js/main.js"></script>
+	<script src="js/popup.js"></script>
+	<script src="js/adapt_menu.js"></script>
+	<script src="js/modul.js"></script>
 	<!-- endbuild -->
 </body>
 </html>

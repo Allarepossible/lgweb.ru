@@ -176,59 +176,14 @@
 	border-left-color: rgb(211,118,84);  
     border-right: 0;
 }
-.captcha .error:before{
-	right: -87px;
-	top: 3px;
-	content: "код капчи";
-}
-.captcha .error:after{
-	position: absolute;
-	right: -6%;
-	top: 8px;
-	content: "";
-	border: 7px solid transparent;
-	border-right-color: rgb(211,118,84);  
-    border-left: 0;
-}
+
 .contact_form .has_succes{
 	border: 2px solid #51c5a8;
 		-webkit-border-radius: 3px;
 			border-radius: 3px;
 }
 
-.antispam{
-	display: block;
-	float: left;
-	width: 190px;
-	height: 77px;
-	position: relative;
-	border: 1px solid rgb(214, 213, 211);
-	-webkit-border-radius: 4px;
-			border-radius: 4px;
-	background-color: #fff;
-	-webkit-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.35);
-	   -moz-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.35);
-			box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.35);
-	margin-bottom: 33px;
-}
-.antispam:before{
-	position: absolute;
-	top: 0;
-	left: 0;
-	content: "";
-	width: 189px;
-	height: 77px;
-	display: block;
-	background-image: url(../images/captcha.png);
-	background-position: center;
-	overflow: hidden;
-}
-.captcha{
-	display: block;
-	width: 48%;
-	margin-top: 21px;
-	float: right;
-}
+
 input[type="captcha"]{
 	padding-left: 8px;
 	line-height: 1;
@@ -240,6 +195,7 @@ input[type="captcha"]{
 }
 .contact_form .buttons{
 	display: inline-block;
+	margin-top: 30px;
 	width: 100%;
 }
 .contact_form button {
@@ -298,6 +254,10 @@ button[type="reset"]:hover{
 .contact_form input:focus, .contact_form textarea:focus {
 	border:1px solid rgb(72, 203, 232); 
 	color: rgb(114, 112, 112);
+}
+
+.g-recaptcha .error{
+	display: none;
 }
 textarea{
 	resize:none;
