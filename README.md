@@ -10,14 +10,15 @@
 
 ### For add project go to page lgweb.ru/lk.html
 
-Login : Admin
-Password : Admin
+1. Login : Admin
+2. Password : Admin
 
 
 ### In this directory files for install me project in localhost
 
 To install this project you need :
+
 1. create Data Base lgweb 
-2. create Table auth whith 2 rows: 'name' and 'pass'
+2. create Table auth with 2 rows: 'name' and 'pass'
 3. Create new admin :)
 
