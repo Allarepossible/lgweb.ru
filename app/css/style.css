@@ -121,10 +121,6 @@ header{
 	box-shadow: 0 2px 1px 0 rgba(9, 9, 9, 0.31),inset 0 -2px 3px 0 rgba(41, 41, 41, 0.05);
 }
 
-.socials_item:first-child{
-	margin-left: 0;
-}
-
 .icon, 
 .icon:before, 
 .icon:after {

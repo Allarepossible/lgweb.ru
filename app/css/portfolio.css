@@ -73,7 +73,9 @@
 	color: rgb(114, 112, 112);
 	text-align: center;
 }
-
+.project_item:last-child{
+	display: none;
+}
 .add_project{
 	height: 133px;
 	width: 164px;

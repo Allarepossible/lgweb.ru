@@ -1,12 +1,7 @@
 AddDefaultCharset UTF-8
 
 
-#IndexIgnore *.png *.php *.jpg
-
-#Options -Indexes
-
-
 ErrorDocument 404 /404.html
 
 
-php_value display_errors 1
+php_value display_errors 0

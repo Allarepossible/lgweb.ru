@@ -13,6 +13,28 @@
 	width: 48%;
 	margin-bottom: 15px;
 }
+.error_message{
+	display: block;
+	width: 95%;
+	font-size: 14px;
+	font-family: "OpenSansSemiBold";
+	text-align: center;
+	color: rgb(203, 105, 69);
+	-webkit-border-radius: 4px;
+			border-radius: 4px;
+	background-color: rgba(203, 105, 69, 0.329);
+	padding: 10px;
+	margin-bottom: 15px;
+	border:1px solid rgb(214, 213, 211);
+}
+
+.contact_form .text_succes{
+	-webkit-border-radius: 4px;
+			border-radius: 4px;
+	background-color: rgba(73, 187, 123, 0.329);
+	color: rgb(73, 187, 123);
+}
+
 
 .left{
 	float: left;

@@ -1,6 +1,6 @@
 <?
 
-	require_once 'config.php';
+	require_once '../config.php';
 
 	if(empty($_POST['data']))
 		exit('Все плохо');

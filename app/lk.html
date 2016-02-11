@@ -39,12 +39,12 @@
 	<div class="lk">
 		<div class="text_auth">Авторизируйтесь</div>
 		<div class="auth">
-			<form action="#" method="get" class="form_auth">
+			<form action="php/auth.php" method="POST" enctype="multipart/form-data" class="form_auth">
 				<div class="inputs icon im_mail">
 					<input id="input_name" type="text" name="name" placeholder="Введите Email" class="im_mail_icon">
 				</div>
 				<div class="inputs icon im_pass">
-					<input id="input_email" type="text" name="email" placeholder="Введите пароль" class="im_pass_icon">
+					<input id="input_email" type="text" name="pass" placeholder="Введите пароль" class="im_pass_icon">
 				</div>
 				<div class="checkbox_input">
 					<input type="checkbox" class="checkbox" id="checkbox" />
@@ -60,9 +60,9 @@
 </div>
 <footer class="footer clearfix">
 	<div class="footer_container">
-		<a href="lk.html">
+		<a href="php/logout.php">
 			<div class="icon enter">
-				<span class="enter_text">Вход</span>
+				<span class="enter_text">Выход</span>
 			</div>
 		</a>
 		<div class="footer_text">© 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его!
@@ -79,7 +79,7 @@
 	<script src="js/main.js"></script>
 	<script src="js/popup.js"></script>
 	<script src="js/adapt_menu.js"></script>
-	<script src="js/modul.js"></script>
+	<script src="js/validate.js"></script>
 	<!-- endbuild -->
 </body>
 </html>

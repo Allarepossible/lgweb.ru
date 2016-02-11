@@ -164,11 +164,11 @@
    			<div class="text_error">Невозможно добавить проект.</div>
    		</div>
         <div class="add_project_form">
-			<form action="#" method="get" class="form">
+			<form action="php/upload.php" method="post" enctype="multipart/form-data" class="form">
 				<div class="input_group">
 					<div class="inputs1">
 						<label for="input_name_project">Название проекта</label>
-							<input id="input_name_project" type="text" name="name_project" placeholder="Введите название" class="for_input">
+							<input id="input_name_project" type="text" name="name" placeholder="Введите название" class="for_input">
 					</div>	
 				</div>
 				<div class="input_group">						
@@ -176,13 +176,13 @@
 					<label class="label_img" for="upload_img">
 						<span class="upload_text_img"  id="fileformlabel">Загрузите изображение</span>
 						<span class="upload_icon_img icon"></span>	
-						<input class="upload_file" id="upload_img" type="file" name="img_project"  onchange="getName(this.value);">
+						<input class="upload_file" id="upload_img" type="file" name="photo"  onchange="getName(this.value);">
 					</label>	
 				</div>	
 				<div class="input_group">
 					<div class="inputs2">
 						<label for="url_project">URL проекта</label>
-							<input id="url_project" type="text" name="url_project" placeholder="Добавьте ссылку"  class="for_input">
+							<input id="url_project" type="text" name="url" placeholder="Добавьте ссылку"  class="for_input">
 					</div>
 				</div>	
 				<div class="input_group">
@@ -216,7 +216,8 @@
 	<script src="js/main.js"></script>
 	<script src="js/popup.js"></script>
 	<script src="js/adapt_menu.js"></script>
-	<script src="js/modul.js"></script>
+	<script src="js/add_project.js"></script>
+	<script src="js/validate.js"></script>
 	<!-- endbuild -->
 </body>
 </html>
